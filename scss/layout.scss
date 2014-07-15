@@ -1,0 +1,277 @@
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  columns: 12,
+  gutter-position: inside
+);
+
+/* Size constants */
+$HeaderHeight: 50px;
+$WrapperHeight: 100%;
+
+$WrapperMainMenuHeight: 50px;
+$WrapperContentHeight: 80%;
+$WrapperSubMenuHeight: 50px;;
+
+$Text-Size: 30px;
+
+/* Color constants */
+$MainTextColor: #8FB5EB;
+.btn-disabled {
+	text-decoration: none;
+	color: grey;
+	display: block;
+	height: 100%;
+	font-size: 40px;
+	cursor: default;
+}
+.btn-enabled {
+	text-decoration: none;
+	color: black;
+	display: block;
+	height: 100%;
+	font-size: 40px;
+	cursor: hand;
+}
+.btn {
+	border: 1px solid #072754;
+	background-color: #8FB5EB;
+	margin-bottom: 20px;
+	a{
+		color: white;
+	}
+}
+.btn-table {
+	text-decoration: none;
+	font-size: 30px;
+	display: block;
+	cursor: hand;
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: auto;
+	min-height: 100%;
+	border-left: 1px solid #748AA8;
+	border-right: 1px solid #748AA8;
+	
+	position: absolute;
+}
+.menuItem-unselected {
+	background-color: white;
+	border: none;
+}
+.menuItem-selected {
+	margin: 0;
+	background-color: #8FB5EB;
+	border-left: 1px solid #072754;
+	border-right: 1px solid #072754;
+}
+
+#Header {
+	height: $HeaderHeight;
+	text-align: center;
+	font-size: 30px;
+	border-bottom: 1px solid #748AA8;
+	color: $MainTextColor;
+}
+
+/* Setting layout for the content */
+.mainWrapper {
+	height: $WrapperHeight;
+	width: 100%;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	
+	#MainMenu {
+		height: $WrapperMainMenuHeight;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		border-bottom: 1px solid #748AA8;
+
+		div {
+			margin: 0;
+			width: 20%;
+			height: 100%;
+			text-align: center;
+			float: left;
+		}
+		div:last-child {
+			width: 18%;
+		} 
+
+
+	}
+
+	#Content {
+		height: $WrapperContentHeight;
+		padding: 30px;
+		clear: both;
+		background-color: #F0F4FA;
+		/*@include span(12 of 12) { */
+			text-align: center;
+			.contentHeading {
+					font-family: "fontello";
+					color: #3C5373;
+					font-size: 30px;
+					height: 25%;
+			}
+			
+		/*} */
+	}
+
+	#SubMenu {
+		position: fixed;
+		bottom: 0;
+		height: $WrapperSubMenuHeight;
+		width: 100%;
+		border-top: 1px solid #748AA8;
+		float: left;
+		background-color: white;
+		z-index: 1;
+		div {
+			margin: 0;
+			width: 25%;
+			height: 100%;
+			text-align: center;
+			float: left;
+		}
+		div:last-child {
+			width: 23%;
+		} 
+	}
+}
+
+
+/* Style up tables */
+.sebraTable {
+	height: 100%;
+	width: 100%;
+	margin-bottom: 20px;
+
+	thead {
+		tr {
+			
+
+			td {
+				color: #436FBA;
+				font-weight: bold;
+				border-bottom: 2px solid #436FBA;
+			}
+		}
+		
+	}
+	tbody {
+		tr {
+			height: 40px;
+			td {
+				font-size: $Text-Size;
+			}
+		}
+		.colored {
+			color: #8FB5EB;
+			a{
+					color: #8FB5EB;
+			}
+		}
+		.nonecolored {
+			color: #8FB5EB;
+			a{
+					color: #8FB5EB;
+			}
+		}
+	}
+	tfoot {
+		tr {
+			height: $Text-Size;
+			
+			td{
+				border-top: 2px solid #436FBA;
+			}	
+		}
+		
+	}
+}
+.ui-dropdown {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 30px;
+ 
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-out;
+
+    :after {
+    	content: "";
+	    width: 0;
+	    height: 0;
+	    position: absolute;
+	    top: 50%;
+	    right: 15px;
+	    margin-top: -3px;
+	    border-width: 6px 6px 0 6px;
+	    border-style: solid;
+	    border-color: #4cbeff transparent;
+    }
+    .dropdown {
+    	 /* Size & position */
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    right: 0;
+	 
+	    /* Styles */
+	    background: #fff;
+	    border-radius: 0 0 5px 5px;
+	    border: 1px solid rgba(0,0,0,0.2);
+	    border-top: none;
+	    border-bottom: none;
+	    list-style: none;
+	    transition: all 0.3s ease-out;
+	 
+	    /* Hiding */
+	    max-height: 0;
+	    overflow: hidden;
+	    li {
+	    	padding: 0;
+	    	a{
+	    		display: block;
+			    text-decoration: none;
+			    color: white;
+			    padding: 10px 0;
+			    transition: all 0.3s ease-out;
+			    border-bottom: 1px solid #e6e8ea;
+	    	}
+	    	:last-of-type a {
+	    		border: none;
+	    	}
+	    }
+    }
+    .active {
+    	border-radius: 5px 5px 0 0;
+	    background: #4cbeff;
+	    box-shadow: none;
+	    border-bottom: none;
+	    color: white;
+	    :after {
+	    	border-color: #82d1ff transparent;
+	    }
+	    .dropdown {
+	    	border-bottom: 1px solid rgba(0,0,0,0.2);
+    		max-height: 400px;
+	    }
+    }
+
+}

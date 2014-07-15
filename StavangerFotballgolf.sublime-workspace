@@ -1,0 +1,341 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"main",
+				"MainTextColor"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"Wrapp",
+				"WrapperContentHeight"
+			],
+			[
+				"Header",
+				"HeaderHeight"
+			],
+			[
+				"Main",
+				"MainTextColor"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"Sub",
+				"SubMenuHeight"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.html",
+			"settings":
+			{
+				"buffer_size": 2807,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "javascript/main.js",
+			"settings":
+			{
+				"buffer_size": 1357,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/layout.scss",
+			"settings":
+			{
+				"buffer_size": 4365,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/fontello.css",
+			"settings":
+			{
+				"buffer_size": 2123,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"package instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Web Projects/Stavanger Fotballgolf/css/fontello.css",
+		"/C/fontello.css",
+		"/C/garbage.css",
+		"/C/Users/Christer/Downloads/fontello-d7b78ece.zip",
+		"/C/Web Projects/Stavanger Fotballgolf/StavangerFotballgolf.sublime-project",
+		"/C/Users/Christer/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Web Projects/Stavanger Fotballgolf/scss/layout.scss"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.html",
+					"settings":
+					{
+						"buffer_size": 2807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1804,
+								1804
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 90.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "javascript/main.js",
+					"settings":
+					{
+						"buffer_size": 1357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1054,
+								1054
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/layout.scss",
+					"settings":
+					{
+						"buffer_size": 4365,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2975,
+								2975
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2427.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/fontello.css",
+					"settings":
+					{
+						"buffer_size": 2123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2072,
+								2085
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

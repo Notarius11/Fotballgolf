@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/fontello.css" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="javascript/main.js"></script>
+	</head>
+	<body>
+		<div ID="Header">
+			<div ID="headerLabel">Registration (1 of 3) - Choose type of play</div>
+		</div>
+		<div class="mainWrapper">
+			<div ID="MainMenu">
+				<div class="menuItem-unselected"><a class="icon-home btn-enabled" href="#"></a></div>
+				<div class="menuItem-unselected"><a class="icon-book btn-enabled" href="#"></a></div>
+				<div class="menuItem-unselected"><a class="icon-check btn-enabled" href="#"></a></div>
+				<div class="menuItem-unselected"><a class="icon-user btn-enabled" href="#"></a></div>
+				<div class="menuItem-selected"><a class="icon-play-circled2 btn-enabled" href="#"></a></div>
+			</div>
+			<div ID="Content">
+				<div id="gameStage_0">
+					<div class="btn" id="teamPlay"><a class="btn-enabled" href="#" onclick="play_click(1)">Start teamplay</a></div>
+					<div class="btn" id="individualPlay"><a class="btn-enabled" href="#" onclick="play_click(2)">Start individual</a></div>
+				</div>
+				<div id="gameStage_1" style="display:none;">
+					<table class="sebraTable">
+						<thead>
+							<tr>
+								<td id="colName">Name</td>
+								<td id="colTeam">Team</td>
+								<td></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr id="row_1" class="colored">
+								<td id="colName">Christer Backlund</td>
+								<td id="colTeam">
+									<div id="row_1_Team" class="ui-dropdown">
+										<ul class="dropdown">
+											<li>
+												<a href="#"></a>Team 1</a>
+											</li>
+											<li>
+												<a href="#"></a>Team 2</a>
+											</li>
+										</ul>
+									</div>
+								</td>
+								<td><a class="icon-trash" href="#"></a></td>
+							</tr>
+							<tr id="row_2" class="nonecolored">
+								<td id="colName">Dagi Dreyer</td>
+								<td id="colTeam">Team 2</td>
+								<td><div><a class="icon-trash" href="#"></a></div></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td colspan="3"><div class="btn"  id="btn-AddPlayer" style="margin-bottom:5px; height:100%; margin-top:5px;"><a class="btn-table" href="#" onclick="play_click(1)" >Add player</a></div></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+			<div ID="SubMenu">
+				<div><a id="btnPreviousStep" class="icon-left-circled2 btn-disabled" href="#"></a></div>
+				<div><a id="btnHoleInfo" class="icon-info btn-disabled" href="#"></a></div>
+				<div><a id="btnScoreSheet" class="icon-calendar btn-disabled" href="#"></a></div>
+				<div><a id="btnNextStep" class="icon-right-circled2 btn-enabled" href="#"></a></div>
+			</div>
+		</div>
+	</body>
+</html>
