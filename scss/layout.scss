@@ -10,9 +10,9 @@ $susy: (
 $HeaderHeight: 50px;
 $WrapperHeight: 100%;
 
-$WrapperMainMenuHeight: 50px;
+$WrapperMainMenuHeight: 10%;
 $WrapperContentHeight: 80%;
-$WrapperSubMenuHeight: 50px;;
+$WrapperSubMenuHeight: 10%;
 
 $Text-Size: 30px;
 
@@ -113,7 +113,6 @@ body {
 
 	#Content {
 		height: $WrapperContentHeight;
-		padding: 30px;
 		clear: both;
 		background-color: #F0F4FA;
 		/*@include span(12 of 12) { */
@@ -124,12 +123,18 @@ body {
 					font-size: 30px;
 					height: 25%;
 			}
+		#gameStage_01 {
 			
+			.sectionWrapper {
+				
+
+			}
+		}
 		/*} */
 	}
 
 	#SubMenu {
-		position: fixed;
+		//position: fixed;
 		bottom: 0;
 		height: $WrapperSubMenuHeight;
 		width: 100%;

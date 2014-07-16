@@ -1,0 +1,7 @@
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  columns: 12,
+  gutter-position: inside
+);
