@@ -60,4 +60,4 @@
 .icon-calendar:before { content: '\e807'; } /* '' */
 .icon-left-circled2:before { content: '\e808'; } /* '' */
 .icon-right-circled2:before { content: '\e809'; } /* '' */
-.icon-down-dir:after { content: '\e80a'; } /* '' */
+.icon-down-dir:before { content: '\e80a'; } /* '' */

@@ -3,5 +3,110 @@
 
 $susy: (
   columns: 12,
-  gutter-position: inside
+  gutter-position: inside,
+  gutters: 0
 );
+
+$small-screen: 476px;
+$large-screen: 1200px;
+$font-heading: bold 30px fontello, serif;
+
+$standard-border: 1px solid #072754;
+$standard-backgroundcolor: #C5D2ED;
+$standard-forecolor: #5B616E;
+
+.page { @include container; }
+
+body {
+	margin: 0;
+	background-color: #E8E8E8;
+}
+
+//Define the top menu layout
+.contentTop {
+	div {
+		@include span(2 of 10);
+	}
+}
+.contentBottom {
+	bottom: 0;
+	position: fixed;
+	border-top: $standard-border;
+	height: 40px;
+	width: 100%;
+}
+.contentMain {
+	div {
+
+		@include breakpoint($small-screen){
+			@include span(4 of 4);	
+		}
+		@include breakpoint($large-screen){
+			@include span(4 of 12);	
+		}
+		
+	}
+}
+
+//Controll staylings
+.menuItem-unselected {
+	background-color: white;
+	border-bottom: 1px solid #072754;
+}
+.menuItem-selected {
+	margin: 0;
+	background-color: #8FB5EB;
+	border-left: 1px solid #072754;
+	border-right: 1px solid #072754;
+	border-bottom: 1px solid #072754;
+}
+
+.btn-enabled {
+	text-decoration: none;
+	color: black;
+	display: block;
+	height: 100%;
+	font-size: 40px;
+	cursor: hand;
+}
+
+.groupBox {
+
+	border-bottom: $standard-border;
+	border-left: $standard-border;
+	border-right: $standard-border;
+	font: $font-heading;
+	background-color: $standard-backgroundcolor;
+	color: $standard-forecolor;
+	transition: height 2s;
+	
+	.groupFrontIcon {
+		@include span(1 of 6);
+		height: 70px;
+		border-bottom: $standard-border;
+		font-size: 200%
+	}
+	.groupText {
+		@include span(4 of 6);
+		border-bottom: $standard-border;
+		height: 70px;
+	}
+	.groupBackIcon {
+		@include span(1 of 6 last);
+		border-bottom: $standard-border;
+		height: 70px;
+		text-align: right;
+	}
+	.groupContent {
+		@include span(6 of 6);
+		@include gutter(2em inside);
+		background-color: white;
+		display: none;
+	}
+
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+
+}
+.groupInnerBox {
+	background-color: white;
+}

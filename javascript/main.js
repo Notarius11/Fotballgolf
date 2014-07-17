@@ -15,6 +15,9 @@ function play_click(pTypeOfPlay) {
 	typeOfPlay = pTypeOfPlay;
 	runStep('Next');
 }
+function showHideGroup(pControl) {
+	$(pControl).children('.groupContent').show();
+}
 
 /*Tool functions */
 function runStep(pStepDirection) {

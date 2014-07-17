@@ -1,0 +1,109 @@
+.page {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .page:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+body {
+  margin: 0;
+  background-color: #E8E8E8; }
+
+.contentTop div {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 20%;
+  float: left; }
+
+.contentBottom {
+  bottom: 0;
+  position: fixed;
+  border-top: 1px solid #072754;
+  height: 40px;
+  width: 100%; }
+
+@media (min-width: 476px) {
+  .contentMain div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left; } }
+@media (min-width: 1200px) {
+  .contentMain div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left; } }
+
+.menuItem-unselected {
+  background-color: white;
+  border-bottom: 1px solid #072754; }
+
+.menuItem-selected {
+  margin: 0;
+  background-color: #8FB5EB;
+  border-left: 1px solid #072754;
+  border-right: 1px solid #072754;
+  border-bottom: 1px solid #072754; }
+
+.btn-enabled {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 100%;
+  font-size: 40px;
+  cursor: hand; }
+
+.groupBox {
+  border-bottom: 1px solid #072754;
+  border-left: 1px solid #072754;
+  border-right: 1px solid #072754;
+  font: bold 30px fontello, serif;
+  background-color: #c5d2ed;
+  color: #5b616e;
+  transition: height 2s;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+  .groupBox .groupFrontIcon {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%;
+    float: left;
+    height: 70px;
+    border-bottom: 1px solid #072754;
+    font-size: 200%; }
+  .groupBox .groupText {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: left;
+    border-bottom: 1px solid #072754;
+    height: 70px; }
+  .groupBox .groupBackIcon {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 16.66667%;
+    float: right;
+    border-bottom: 1px solid #072754;
+    height: 70px;
+    text-align: right; }
+  .groupBox .groupContent {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: white;
+    display: none; }
+
+.groupInnerBox {
+  background-color: white; }
