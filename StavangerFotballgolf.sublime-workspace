@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"color",
+				"color-forecolor-menuheader"
+			],
+			[
+				"col",
+				"color-bacground-menuheader"
+			],
+			[
+				"border-s",
+				"color-border-standard"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"font",
+				"font"
+			],
+			[
+				"sta",
+				"standard-border"
+			],
+			[
 				"back",
 				"background-color"
 			],
@@ -32,10 +60,6 @@
 				"border"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"u",
 				"ul	Tag"
 			],
@@ -52,18 +76,18 @@
 	"buffers":
 	[
 		{
-			"file": "main.html",
+			"file": "susyTest.html",
 			"settings":
 			{
-				"buffer_size": 2807,
+				"buffer_size": 1839,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "javascript/main.js",
+			"file": "main.html",
 			"settings":
 			{
-				"buffer_size": 1357,
+				"buffer_size": 3063,
 				"line_ending": "Windows"
 			}
 		},
@@ -71,16 +95,40 @@
 			"file": "scss/layout.scss",
 			"settings":
 			{
-				"buffer_size": 4365,
+				"buffer_size": 4401,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/fontello.css",
+			"file": "scss/susylayout.scss",
 			"settings":
 			{
-				"buffer_size": 2123,
-				"line_ending": "Unix"
+				"buffer_size": 5340,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/susylayout2.scss",
+			"settings":
+			{
+				"buffer_size": 361,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/susylayout.css",
+			"settings":
+			{
+				"buffer_size": 5577,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "javascript/main.js",
+			"settings":
+			{
+				"buffer_size": 1498,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -120,6 +168,11 @@
 	},
 	"file_history":
 	[
+		"/F/Web Projects/Fotballgolf/main.html",
+		"/F/Web Projects/Fotballgolf/javascript/main.js",
+		"/F/Web Projects/Fotballgolf/scss/layout.scss",
+		"/F/Web Projects/Fotballgolf/scss/susylayout.scss",
+		"/F/Web Projects/Fotballgolf/css/fontello.css",
 		"/C/Web Projects/Stavanger Fotballgolf/css/fontello.css",
 		"/C/fontello.css",
 		"/C/garbage.css",
@@ -161,23 +214,50 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.html",
+					"file": "susyTest.html",
 					"settings":
 					{
-						"buffer_size": 2807,
+						"buffer_size": 1839,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1804,
-								1804
+								1660,
+								1660
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 276.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.html",
+					"settings":
+					{
+						"buffer_size": 3063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1875,
+								2056
 							]
 						],
 						"settings":
@@ -192,46 +272,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "javascript/main.js",
-					"settings":
-					{
-						"buffer_size": 1357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1054,
-								1054
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 45.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 2,
 					"file": "scss/layout.scss",
 					"settings":
 					{
-						"buffer_size": 4365,
+						"buffer_size": 4401,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2975,
-								2975
+								3151,
+								3151
 							]
 						],
 						"settings":
@@ -240,25 +293,78 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2427.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "css/fontello.css",
+					"file": "scss/susylayout.scss",
 					"settings":
 					{
-						"buffer_size": 2123,
+						"buffer_size": 5340,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2072,
-								2085
+								2182,
+								2182
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2362.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/susylayout2.scss",
+					"settings":
+					{
+						"buffer_size": 361,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/susylayout.css",
+					"settings":
+					{
+						"buffer_size": 5577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1329,
+								1329
 							]
 						],
 						"settings":
@@ -268,7 +374,34 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 315.0,
+						"translation.y": 675.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "javascript/main.js",
+					"settings":
+					{
+						"buffer_size": 1498,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								278,
+								278
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

@@ -9,34 +9,42 @@
 	</head>
 	<body>
 		<div class="contentTop">
-			<div class="menuItem-unselected"><a class="icon-home btn-enabled" href="#"></a></div>
-			<div class="menuItem-unselected"><a class="icon-book btn-enabled" href="#"></a></div>
-			<div class="menuItem-unselected"><a class="icon-check btn-enabled" href="#"></a></div>
-			<div class="menuItem-unselected"><a class="icon-user btn-enabled" href="#"></a></div>
-			<div class="menuItem-selected"><a class="icon-play-circled2 btn-enabled" href="#"></a></div>
+			<div class="menuItem unselected"><a class="icon-home btn-enabled" href="#"></a>Home</div>
+			<div class="menuItem unselected"><a class="icon-book btn-enabled" href="#"></a>Courses</div>
+			<div class="menuItem unselected"><a class="icon-check btn-enabled" href="#"></a>Rules</div>
+			<div class="menuItem unselected"><a class="icon-user btn-enabled" href="#"></a>Profiles</div>
+			<div class="menuItem selected"><a class="icon-play-circled2 btn-enabled" href="#"></a>Play</div>
 		</div>
 		<div class="contentMain">
-			<div class="groupBox" onclick="showHideGroup(this)">
-				<div class="groupFrontIcon icon-home"></div>
-				<div class="groupText">Choose type of play</div>
-				<div class="groupBackIcon icon-down-dir"></div>
+			<div class="groupBox" >
+				<div id="groupTypeOfPlay">
+						<div><a class="unselected" href="#">Team Play</a></div>
+						<div><a class="unselected" href="#">Individual</a></div>
+					</div>
+					<!-- <div id="topDD" class="ui-DropdownWrapper" onclick="activateDropdown(this)">
+						<span>Type of play</span>
+						<ul class="ui-Dropdown">
+							<li>
+								<a href="#"></a>Team 1</a>
+							</li>
+							<li>
+								<a href="#"></a>Team 2</a>
+							</li>
+						</ul>
+					</div> -->
+			</div>
+			<div class="groupBox">
+				<div class="groupBoxHeader">
+					<div class="groupText" onclick="showHideGroup(this)">Add players</div>
+					<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
+				</div>
 				<div class="groupContent">Content</div>
 			</div>
 			<div class="groupBox">
-				<div class="groupFrontIcon icon-home"></div>
-				<div class="groupText">Add players</div>
-				<div class="groupBackIcon icon-down-dir"></div>
-				<div class="groupContent">Content</div>
-			</div>
-			<div class="groupBox">
-				<div class="groupFrontIcon icon-home"></div>
 				<div class="groupText">Choose course</div>
 				<div class="groupBackIcon icon-down-dir"></div>
 				<div class="groupContent">Content</div>
 			</div>
-		</div>
-		<div class="contentBottom">
-			Bunnlinje
 		</div>
 	</body>
 </html>

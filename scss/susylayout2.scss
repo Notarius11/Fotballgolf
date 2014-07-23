@@ -1,0 +1,23 @@
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  columns: 12,
+  gutter-position: inside
+);
+
+$small-screen: 476px;
+$large-screen: 1200px;
+$font-heading: bold 30px fontello, serif;
+
+$standard-border: 1px solid #072754;
+$standard-backgroundcolor: white;
+$standard-forecolor: #5B616E;
+
+
+.page { @include container; }
+
+body {
+	margin: 0;
+	background-color: white;
+}

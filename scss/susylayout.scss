@@ -3,99 +3,161 @@
 
 $susy: (
   columns: 12,
-  gutter-position: inside,
-  gutters: 0
+  gutter-position: inside
 );
 
 $small-screen: 476px;
 $large-screen: 1200px;
 $font-heading: bold 30px fontello, serif;
+$font-menu: bold 1em helvetica, serif;
 
-$standard-border: 1px solid #072754;
-$standard-backgroundcolor: #C5D2ED;
-$standard-forecolor: #5B616E;
+/* Colors */
+$color-background-standard: white;
+$color-bacground-menuheader: #F0F0F0;
 
-.page { @include container; }
+$color-forecolor-standard: #5B616E;
+$color-forecolor-menuheader: #6E6E6E;
+
+$color-border-standard: 1px solid #6E6E6E;
+
+a {
+	text-decoration: none;
+	color: $color-forecolor-menuheader;
+	text-align: center;
+	display: block;
+	cursor: hand;
+
+}
+
+.page { @include container;}
 
 body {
 	margin: 0;
-	background-color: #E8E8E8;
+	background-color: white;
 }
 
 //Define the top menu layout
 .contentTop {
+	background-color: $color-bacground-menuheader;
 	div {
 		@include span(2 of 10);
+		font: $font-menu;
+		text-align: center;
 	}
 }
 .contentBottom {
 	bottom: 0;
 	position: fixed;
-	border-top: $standard-border;
+	border-top: $color-border-standard;
 	height: 40px;
 	width: 100%;
+	div {
+		@include span(2 of 10);
+	}
 }
 .contentMain {
 	div {
-
 		@include breakpoint($small-screen){
 			@include span(4 of 4);	
 		}
 		@include breakpoint($large-screen){
 			@include span(4 of 12);	
 		}
-		
 	}
 }
-
-//Controll staylings
-.menuItem-unselected {
+.unselected {
 	background-color: white;
 	border-bottom: 1px solid #072754;
+	background-color: $color-bacground-menuheader;
+	color: $color-forecolor-menuheader;
+	.btn-enabled {
+		text-decoration: none;
+		color: $color-forecolor-menuheader;
+		text-align: center;
+		display: block;
+		font-size: 40px;
+		cursor: hand;
+	}
 }
-.menuItem-selected {
+.selected {
 	margin: 0;
-	background-color: #8FB5EB;
+	background-color: $color-forecolor-menuheader;
+	color: $color-bacground-menuheader;
 	border-left: 1px solid #072754;
 	border-right: 1px solid #072754;
 	border-bottom: 1px solid #072754;
+
+	.btn-enabled {
+		text-decoration: none;
+		color: $color-bacground-menuheader;
+		text-align: center;
+		display: block;
+		font-size: 40px;
+		cursor: hand;
+	}
 }
 
-.btn-enabled {
-	text-decoration: none;
-	color: black;
-	display: block;
-	height: 100%;
-	font-size: 40px;
-	cursor: hand;
-}
+
+
+
+
+
+//Controll staylings
+
+
 
 .groupBox {
-
-	border-bottom: $standard-border;
-	border-left: $standard-border;
-	border-right: $standard-border;
+	border-bottom: $color-border-standard;
 	font: $font-heading;
-	background-color: $standard-backgroundcolor;
-	color: $standard-forecolor;
-	transition: height 2s;
+	background-color: $color-background-standard;
+	color: $color-forecolor-standard;
+	height: inherit;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding-top:17.5px;
+	padding-bottom:17.5px;
 	
-	.groupFrontIcon {
-		@include span(1 of 6);
-		height: 70px;
-		border-bottom: $standard-border;
-		font-size: 200%
+
+	
+	#groupTypeOfPlay {
+		@include span(12 last of 12);
+
+		div {
+			@include span(6 of 12);
+			@include gutters(10%);
+			text-align: center;
+			height: 40px;
+
+
+			a {
+				border: $color-border-standard;
+				&:hover {
+					background-color: $color-forecolor-menuheader;
+					color: $color-bacground-menuheader;
+				}
+			}
+			
+		}
+
 	}
-	.groupText {
-		@include span(4 of 6);
-		border-bottom: $standard-border;
-		height: 70px;
-	}
-	.groupBackIcon {
-		@include span(1 of 6 last);
-		border-bottom: $standard-border;
-		height: 70px;
-		text-align: right;
+	.groupBoxHeader {
+		@include gutters(none);
+
+		.groupText {
+			@include span(5 of 6);
+			border-bottom: $color-border-standard;
+			height: 40px;
+		}
+		.groupBackIcon {
+			@include span(1 of 6 last);
+			border-bottom: $color-border-standard;
+			height: 40px;
+			text-align: right;
+		}
 	}
 	.groupContent {
 		@include span(6 of 6);
@@ -109,4 +171,110 @@ body {
 }
 .groupInnerBox {
 	background-color: white;
+
+}
+.ui-DropdownWrapper {
+    /* Size and position */
+    position: relative;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+
+    /* Styles */
+    background: #fff;
+    border-radius: 7px;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+    cursor: pointer;
+    outline: none;
+
+    /* Font settings */
+    font-weight: bold;
+    color: #8AA8BD;
+
+    :after {
+	    content: "";
+	    width: 0;
+	    height: 0;
+	    position: absolute;
+	    right: 15px;
+	    top: 50%;
+	    margin-top: -3px;
+	    border-width: 6px 6px 0 6px;
+	    border-style: solid;
+	    border-color: #8aa8bd transparent;
+	}
+	.ui-Dropdown {
+		 /* Size & position */
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+
+	    /* Styles */
+	    background: white;
+	    border-radius: inherit;
+	    border: 1px solid rgba(0,0,0,0.17);
+	    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+	    font-weight: normal;
+	    -webkit-transition: all 0.5s ease-in;
+	    -moz-transition: all 0.5s ease-in;
+	    -ms-transition: all 0.5s ease-in;
+	    -o-transition: all 0.5s ease-in;
+	    transition: all 0.5s ease-in;
+	    list-style: none;
+
+
+
+	    /* Hiding */
+	    opacity: 0;
+	    pointer-events: none;
+
+	    .active {
+    		opacity: 1;
+    		pointer-events: auto;
+    	}
+
+	    :after {
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    position: absolute;
+		    bottom: 100%;
+		    right: 15px;
+		    border-width: 0 6px 6px 6px;
+		    border-style: solid;
+		    border-color: #fff transparent;    
+		}
+		:before {
+		    content: "";
+		    width: 0;
+		    height: 0;
+		    position: absolute;
+		    bottom: 100%;
+		    right: 13px;
+		    border-width: 0 8px 8px 8px;
+		    border-style: solid;
+		    border-color: rgba(0,0,0,0.1) transparent;    
+		}
+		li a {
+		    display: block;
+		    padding: 10px;
+		    text-decoration: none;
+		    color: #8aa8bd;
+		    border-bottom: 1px solid #e6e8ea;
+		    box-shadow: inset 0 1px 0 rgba(255,255,255,1);
+		    -webkit-transition: all 0.3s ease-out;
+		    -moz-transition: all 0.3s ease-out;
+		    -ms-transition: all 0.3s ease-out;
+		    -o-transition: all 0.3s ease-out;
+		    transition: all 0.3s ease-out;
+		}
+		li:first-of-type a {
+		    border-radius: 7px 7px 0 0;
+		}
+		li:last-of-type a {
+		    border: none;
+		    border-radius: 0 0 7px 7px;
+		}
+	}
 }

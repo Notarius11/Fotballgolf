@@ -1,3 +1,11 @@
+/* Colors */
+a {
+  text-decoration: none;
+  color: #6e6e6e;
+  text-align: center;
+  display: block;
+  cursor: hand; }
+
 .page {
   max-width: 100%;
   margin-left: auto;
@@ -9,21 +17,35 @@
 
 body {
   margin: 0;
-  background-color: #E8E8E8; }
+  background-color: white; }
 
-.contentTop div {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 20%;
-  float: left; }
+.contentTop {
+  background-color: #f0f0f0; }
+  .contentTop div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    font: bold 1em helvetica, serif;
+    text-align: center; }
 
 .contentBottom {
   bottom: 0;
   position: fixed;
-  border-top: 1px solid #072754;
+  border-top: 1px solid #6e6e6e;
   height: 40px;
   width: 100%; }
+  .contentBottom div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 20%;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%; }
 
 @media (min-width: 476px) {
   .contentMain div {
@@ -31,75 +53,119 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    float: left; } }
+    float: left;
+    padding-left: 2.5%;
+    padding-right: 2.5%; } }
 @media (min-width: 1200px) {
   .contentMain div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 33.33333%;
-    float: left; } }
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; } }
 
-.menuItem-unselected {
+.unselected {
   background-color: white;
-  border-bottom: 1px solid #072754; }
+  border-bottom: 1px solid #072754;
+  background-color: #f0f0f0;
+  color: #6e6e6e; }
+  .unselected .btn-enabled {
+    text-decoration: none;
+    color: #6e6e6e;
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    cursor: hand; }
 
-.menuItem-selected {
+.selected {
   margin: 0;
-  background-color: #8FB5EB;
+  background-color: #6e6e6e;
+  color: #f0f0f0;
   border-left: 1px solid #072754;
   border-right: 1px solid #072754;
   border-bottom: 1px solid #072754; }
-
-.btn-enabled {
-  text-decoration: none;
-  color: black;
-  display: block;
-  height: 100%;
-  font-size: 40px;
-  cursor: hand; }
+  .selected .btn-enabled {
+    text-decoration: none;
+    color: #f0f0f0;
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    cursor: hand; }
 
 .groupBox {
-  border-bottom: 1px solid #072754;
-  border-left: 1px solid #072754;
-  border-right: 1px solid #072754;
+  border-bottom: 1px solid #6e6e6e;
   font: bold 30px fontello, serif;
-  background-color: #c5d2ed;
+  background-color: white;
   color: #5b616e;
-  transition: height 2s;
+  height: inherit;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding-top: 17.5px;
+  padding-bottom: 17.5px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
-  .groupBox .groupFrontIcon {
+  .groupBox #groupTypeOfPlay {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 16.66667%;
-    float: left;
-    height: 70px;
-    border-bottom: 1px solid #072754;
-    font-size: 200%; }
-  .groupBox .groupText {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 66.66667%;
-    float: left;
-    border-bottom: 1px solid #072754;
-    height: 70px; }
-  .groupBox .groupBackIcon {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 16.66667%;
+    width: 100%;
     float: right;
-    border-bottom: 1px solid #072754;
-    height: 70px;
-    text-align: right; }
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+    .groupBox #groupTypeOfPlay div {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 50%;
+      float: left;
+      padding-left: 0.83333%;
+      padding-right: 0.83333%;
+      padding-left: 5%;
+      padding-right: 5%;
+      text-align: center;
+      height: 40px; }
+      .groupBox #groupTypeOfPlay div a {
+        border: 1px solid #6e6e6e; }
+        .groupBox #groupTypeOfPlay div a:hover {
+          background-color: #6e6e6e;
+          color: #f0f0f0; }
+  .groupBox .groupBoxHeader {
+    padding-left: 0.83333%;
+    padding-right: 0.83333%; }
+    .groupBox .groupBoxHeader .groupText {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 83.33333%;
+      float: left;
+      padding-left: 1.66667%;
+      padding-right: 1.66667%;
+      border-bottom: 1px solid #6e6e6e;
+      height: 40px; }
+    .groupBox .groupBoxHeader .groupBackIcon {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 16.66667%;
+      float: right;
+      padding-left: 1.66667%;
+      padding-right: 1.66667%;
+      border-bottom: 1px solid #6e6e6e;
+      height: 40px;
+      text-align: right; }
   .groupBox .groupContent {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     float: left;
+    padding-left: 1.66667%;
+    padding-right: 1.66667%;
     padding-left: 1em;
     padding-right: 1em;
     background-color: white;
@@ -107,3 +173,91 @@ body {
 
 .groupInnerBox {
   background-color: white; }
+
+.ui-DropdownWrapper {
+  /* Size and position */
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  /* Styles */
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px rgba(50, 50, 50, 0.1);
+  cursor: pointer;
+  outline: none;
+  /* Font settings */
+  font-weight: bold;
+  color: #8AA8BD; }
+  .ui-DropdownWrapper :after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #8aa8bd transparent; }
+  .ui-DropdownWrapper .ui-Dropdown {
+    /* Size & position */
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* Styles */
+    background: white;
+    border-radius: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-weight: normal;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    list-style: none;
+    /* Hiding */
+    opacity: 0;
+    pointer-events: none; }
+    .ui-DropdownWrapper .ui-Dropdown .active {
+      opacity: 1;
+      pointer-events: auto; }
+    .ui-DropdownWrapper .ui-Dropdown :after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 100%;
+      right: 15px;
+      border-width: 0 6px 6px 6px;
+      border-style: solid;
+      border-color: #fff transparent; }
+    .ui-DropdownWrapper .ui-Dropdown :before {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 100%;
+      right: 13px;
+      border-width: 0 8px 8px 8px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.1) transparent; }
+    .ui-DropdownWrapper .ui-Dropdown li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: #8aa8bd;
+      border-bottom: 1px solid #e6e8ea;
+      box-shadow: inset 0 1px 0 white;
+      -webkit-transition: all 0.3s ease-out;
+      -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+      -o-transition: all 0.3s ease-out;
+      transition: all 0.3s ease-out; }
+    .ui-DropdownWrapper .ui-Dropdown li:first-of-type a {
+      border-radius: 7px 7px 0 0; }
+    .ui-DropdownWrapper .ui-Dropdown li:last-of-type a {
+      border: none;
+      border-radius: 0 0 7px 7px; }
