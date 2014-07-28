@@ -1,4 +1,5 @@
 /* Colors */
+/* */
 a {
   text-decoration: none;
   color: #6e6e6e;
@@ -53,18 +54,14 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
-    float: left;
-    padding-left: 2.5%;
-    padding-right: 2.5%; } }
+    float: left; } }
 @media (min-width: 1200px) {
   .contentMain div {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 33.33333%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%; } }
+    float: left; } }
 
 .unselected {
   background-color: white;
@@ -106,8 +103,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding-top: 17.5px;
-  padding-bottom: 17.5px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
   .groupBox #groupTypeOfPlay {
     -moz-box-sizing: border-box;
@@ -116,7 +111,9 @@ body {
     width: 100%;
     float: right;
     padding-left: 0.83333%;
-    padding-right: 0.83333%; }
+    padding-right: 0.83333%;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px; }
     .groupBox #groupTypeOfPlay div {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -130,13 +127,15 @@ body {
       text-align: center;
       height: 40px; }
       .groupBox #groupTypeOfPlay div a {
-        border: 1px solid #6e6e6e; }
-        .groupBox #groupTypeOfPlay div a:hover {
-          background-color: #6e6e6e;
-          color: #f0f0f0; }
+        border: 1px solid #6e6e6e;
+        /*&:hover {
+        	background-color: $color-forecolor-menuheader;
+        	color: $color-bacground-menuheader;
+        }*/ }
   .groupBox .groupBoxHeader {
-    padding-left: 0.83333%;
-    padding-right: 0.83333%; }
+    background-color: #f0f0f0;
+    color: #6e6e6e;
+    height: 75px; }
     .groupBox .groupBoxHeader .groupText {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -146,7 +145,7 @@ body {
       padding-left: 1.66667%;
       padding-right: 1.66667%;
       border-bottom: 1px solid #6e6e6e;
-      height: 40px; }
+      height: 75px; }
     .groupBox .groupBoxHeader .groupBackIcon {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -156,7 +155,7 @@ body {
       padding-left: 1.66667%;
       padding-right: 1.66667%;
       border-bottom: 1px solid #6e6e6e;
-      height: 40px;
+      height: 75px;
       text-align: right; }
   .groupBox .groupContent {
     -moz-box-sizing: border-box;
@@ -164,12 +163,43 @@ body {
     box-sizing: border-box;
     width: 100%;
     float: left;
-    padding-left: 1.66667%;
-    padding-right: 1.66667%;
-    padding-left: 1em;
-    padding-right: 1em;
     background-color: white;
-    display: none; }
+    display: none;
+    padding-top: 17.5px;
+    padding-bottom: 17.5px; }
+    .groupBox .groupContent #availablePlayers {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      float: left;
+      padding-left: 1.66667%;
+      padding-right: 1.66667%; }
+      .groupBox .groupContent #availablePlayers .playerCard {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 33.33333%;
+        float: left;
+        padding-left: 1.66667%;
+        padding-right: 1.66667%;
+        margin-top: 17.5px; }
+        .groupBox .groupContent #availablePlayers .playerCard .profileHeader {
+          border: 1px solid #6e6e6e;
+          height: 55px;
+          text-align: center;
+          background-color: #f0f0f0;
+          -moz-box-shadow: 0 0 5px #888;
+          -webkit-box-shadow: 0 0 5px #888888;
+          box-shadow: 0 0 5px #888; }
+        .groupBox .groupContent #availablePlayers .playerCard .profileInfo {
+          border-left: 1px solid #6e6e6e;
+          border-right: 1px solid #6e6e6e;
+          border-bottom: 1px solid #6e6e6e;
+          -moz-box-shadow: 0 0 5px #888;
+          -webkit-box-shadow: 0 0 5px #888888;
+          box-shadow: 0 0 5px #888;
+          font-size: 50%; }
 
 .groupInnerBox {
   background-color: white; }

@@ -20,6 +20,11 @@ $color-forecolor-menuheader: #6E6E6E;
 
 $color-border-standard: 1px solid #6E6E6E;
 
+/* */
+$padding-topbottom: 17.5px;
+
+
+
 a {
 	text-decoration: none;
 	color: $color-forecolor-menuheader;
@@ -58,10 +63,12 @@ body {
 .contentMain {
 	div {
 		@include breakpoint($small-screen){
-			@include span(4 of 4);	
+			@include span(4 of 4 no-gutters);
+			
 		}
 		@include breakpoint($large-screen){
-			@include span(4 of 12);	
+			@include span(4 of 12 no-gutters);
+			
 		}
 	}
 }
@@ -118,14 +125,14 @@ body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	padding-top:17.5px;
-	padding-bottom:17.5px;
+	//@include bleed($sides: left right);
 	
 
 	
 	#groupTypeOfPlay {
 		@include span(12 last of 12);
-
+		padding-top:$padding-topbottom;
+		padding-bottom:$padding-topbottom;
 		div {
 			@include span(6 of 12);
 			@include gutters(10%);
@@ -135,35 +142,67 @@ body {
 
 			a {
 				border: $color-border-standard;
-				&:hover {
+				/*&:hover {
 					background-color: $color-forecolor-menuheader;
 					color: $color-bacground-menuheader;
-				}
+				}*/
 			}
 			
 		}
 
 	}
 	.groupBoxHeader {
-		@include gutters(none);
-
+		background-color: $color-bacground-menuheader;
+		color: $color-forecolor-menuheader;
+		height: 75px;
 		.groupText {
 			@include span(5 of 6);
 			border-bottom: $color-border-standard;
-			height: 40px;
+			height: 75px;
 		}
 		.groupBackIcon {
 			@include span(1 of 6 last);
 			border-bottom: $color-border-standard;
-			height: 40px;
+			height: 75px;
 			text-align: right;
 		}
 	}
 	.groupContent {
-		@include span(6 of 6);
-		@include gutter(2em inside);
+		@include span(6 of 6 no-gutters);
 		background-color: white;
 		display: none;
+		padding-top:$padding-topbottom;
+		padding-bottom:$padding-topbottom;
+
+		#availablePlayers {
+			@include span(6 of 6);
+			
+			.playerCard {
+				@include span (2 of 6);
+ 				
+				margin-top: $padding-topbottom;
+				
+
+				.profileHeader {
+					border: $color-border-standard;
+					height: 55px;
+					text-align: center;
+					background-color: $color-bacground-menuheader;
+					-moz-box-shadow: 0 0 5px #888;
+					-webkit-box-shadow: 0 0 5px#888;
+					box-shadow: 0 0 5px #888;
+				}
+				.profileInfo {
+					border-left: $color-border-standard;
+					border-right: $color-border-standard;
+					border-bottom: $color-border-standard;
+					-moz-box-shadow: 0 0 5px #888;
+					-webkit-box-shadow: 0 0 5px#888;
+					box-shadow: 0 0 5px #888;
+					font-size: 50%;
+				}
+			}
+		}
 	}
 
 	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
