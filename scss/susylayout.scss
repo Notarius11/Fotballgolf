@@ -40,6 +40,34 @@ body {
 	margin: 0;
 	background-color: white;
 }
+@mixin playerCard {
+		.playerCard {
+		@include span (2 of 6);
+
+
+			
+		margin-top: $padding-topbottom;
+
+		.profileHeader {
+			border: $color-border-standard;
+			height: 55px;
+			text-align: center;
+			background-color: $color-bacground-menuheader;
+			-moz-box-shadow: 0 0 5px #888;
+			-webkit-box-shadow: 0 0 5px#888;
+			box-shadow: 0 0 5px #888;
+		}
+		.profileInfo {
+			border-left: $color-border-standard;
+			border-right: $color-border-standard;
+			border-bottom: $color-border-standard;
+			-moz-box-shadow: 0 0 5px #888;
+			-webkit-box-shadow: 0 0 5px#888;
+			box-shadow: 0 0 5px #888;
+			font-size: 50%;
+		}
+	}
+}
 
 //Define the top menu layout
 .contentTop {
@@ -176,38 +204,20 @@ body {
 
 		#availablePlayers {
 			@include span(6 of 6);
-			
-			.playerCard {
-				@include span (2 of 6);
- 				
-				margin-top: $padding-topbottom;
-				
-
-				.profileHeader {
-					border: $color-border-standard;
-					height: 55px;
-					text-align: center;
-					background-color: $color-bacground-menuheader;
-					-moz-box-shadow: 0 0 5px #888;
-					-webkit-box-shadow: 0 0 5px#888;
-					box-shadow: 0 0 5px #888;
-				}
-				.profileInfo {
-					border-left: $color-border-standard;
-					border-right: $color-border-standard;
-					border-bottom: $color-border-standard;
-					-moz-box-shadow: 0 0 5px #888;
-					-webkit-box-shadow: 0 0 5px#888;
-					box-shadow: 0 0 5px #888;
-					font-size: 50%;
-				}
-			}
+			@include playerCard();
+		}
+		#addedPlayers {
+			@include span(6 of 6);	
+			@include playerCard();
 		}
 	}
 
 	box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 
 }
+
+
+
 .groupInnerBox {
 	background-color: white;
 

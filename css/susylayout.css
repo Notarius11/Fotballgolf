@@ -200,6 +200,39 @@ body {
           -webkit-box-shadow: 0 0 5px #888888;
           box-shadow: 0 0 5px #888;
           font-size: 50%; }
+    .groupBox .groupContent #addedPlayers {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      float: left;
+      padding-left: 1.66667%;
+      padding-right: 1.66667%; }
+      .groupBox .groupContent #addedPlayers .playerCard {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 33.33333%;
+        float: left;
+        padding-left: 1.66667%;
+        padding-right: 1.66667%;
+        margin-top: 17.5px; }
+        .groupBox .groupContent #addedPlayers .playerCard .profileHeader {
+          border: 1px solid #6e6e6e;
+          height: 55px;
+          text-align: center;
+          background-color: #f0f0f0;
+          -moz-box-shadow: 0 0 5px #888;
+          -webkit-box-shadow: 0 0 5px #888888;
+          box-shadow: 0 0 5px #888; }
+        .groupBox .groupContent #addedPlayers .playerCard .profileInfo {
+          border-left: 1px solid #6e6e6e;
+          border-right: 1px solid #6e6e6e;
+          border-bottom: 1px solid #6e6e6e;
+          -moz-box-shadow: 0 0 5px #888;
+          -webkit-box-shadow: 0 0 5px #888888;
+          box-shadow: 0 0 5px #888;
+          font-size: 50%; }
 
 .groupInnerBox {
   background-color: white; }

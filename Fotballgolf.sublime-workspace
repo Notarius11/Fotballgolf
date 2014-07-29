@@ -4,12 +4,12 @@
 		"selected_items":
 		[
 			[
-				"sh",
-				"box-shadow"
+				"color",
+				"color-border-standard"
 			],
 			[
-				"color",
-				"color-bacground-menuheader"
+				"sh",
+				"box-shadow"
 			],
 			[
 				"padd",
@@ -67,7 +67,7 @@
 			"file": "susyTest.html",
 			"settings":
 			{
-				"buffer_size": 3290,
+				"buffer_size": 3745,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +75,7 @@
 			"file": "scss/susylayout.scss",
 			"settings":
 			{
-				"buffer_size": 6300,
+				"buffer_size": 6374,
 				"line_ending": "Windows"
 			}
 		},
@@ -168,7 +168,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -176,15 +176,15 @@
 					"file": "susyTest.html",
 					"settings":
 					{
-						"buffer_size": 3290,
+						"buffer_size": 3745,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1646,
-								1646
+								2559,
+								2559
 							]
 						],
 						"settings":
@@ -203,15 +203,15 @@
 					"file": "scss/susylayout.scss",
 					"settings":
 					{
-						"buffer_size": 6300,
+						"buffer_size": 6374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3453,
-								3453
+								2109,
+								2109
 							]
 						],
 						"settings":
@@ -220,7 +220,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2295.0,
+						"translation.y": 1350.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
