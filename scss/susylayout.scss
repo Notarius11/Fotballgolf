@@ -32,6 +32,11 @@ a {
 	display: block;
 	cursor: hand;
 
+	&:hover {
+		color: $color-bacground-menuheader;
+		background-color: $color-forecolor-menuheader;
+	}
+
 }
 
 .page { @include container;}
@@ -68,6 +73,60 @@ body {
 		}
 	}
 }
+@mixin courseCard {
+		.courseCard {
+		@include span (2 of 6);
+
+
+			
+		margin-top: $padding-topbottom;
+
+		.courseHeader {
+			border: $color-border-standard;
+			height: 55px;
+			text-align: center;
+			background-color: $color-bacground-menuheader;
+			-moz-box-shadow: 0 0 5px #888;
+			-webkit-box-shadow: 0 0 5px#888;
+			box-shadow: 0 0 5px #888;
+		}
+		.courseInfo {
+			border-left: $color-border-standard;
+			border-right: $color-border-standard;
+			border-bottom: $color-border-standard;
+			-moz-box-shadow: 0 0 5px #888;
+			-webkit-box-shadow: 0 0 5px#888;
+			box-shadow: 0 0 5px #888;
+			font-size: 50%;
+		}
+		.courseFooter {
+			height: 30px;
+			text-align: center;
+			border-left: $color-border-standard;
+			border-right: $color-border-standard;
+			border-bottom: $color-border-standard;
+			background-color: $color-bacground-menuheader;
+			-moz-box-shadow: 0 0 5px #888;
+			-webkit-box-shadow: 0 0 5px#888;
+			box-shadow: 0 0 5px #888;
+			font-size: 70%;
+			div {
+				@include span(1 of 2 no-gutters);
+				&:first-child {
+					border-left: none;	
+				}
+				height: 100%;
+				border-left: 1px solid #072754;
+				a {
+
+					border-bottom: none;
+					
+					height: 100%;
+				}
+			}	
+		}
+	}
+}
 
 //Define the top menu layout
 .contentTop {
@@ -101,7 +160,6 @@ body {
 	}
 }
 .unselected {
-	background-color: white;
 	border-bottom: 1px solid #072754;
 	background-color: $color-bacground-menuheader;
 	color: $color-forecolor-menuheader;
@@ -179,6 +237,15 @@ body {
 		}
 
 	}
+	.startGameWrapper {
+		background-color: $color-bacground-menuheader;
+		color: $color-forecolor-menuheader;
+		a {
+			border-bottom: none;
+			height: 100%;
+		}
+		height: 50px;
+	}
 	.groupBoxHeader {
 		background-color: $color-bacground-menuheader;
 		color: $color-forecolor-menuheader;
@@ -209,6 +276,32 @@ body {
 		#addedPlayers {
 			@include span(6 of 6);	
 			@include playerCard();
+		}
+		.courseWrapper {
+			@include span(6 of 6);
+			@include courseCard();
+		}
+		.sheetPrHole {
+			@include span(6 of 6);
+			.sheetHeader {
+				color: #6BC6FF;
+				border-bottom: $color-border-standard;
+			}
+			.sheetPlayer {
+				border-bottom: $color-border-standard;
+				//border-left: $color-border-standard;
+				//border-right: $color-border-standard;
+				background-color: $color-bacground-menuheader;
+				color: $color-forecolor-menuheader;
+			}
+			div {
+				div {
+					&:first-child {
+						@include span(5 of 6 no-gutters);
+					}
+					@include span(1 last of 6 no-gutters);
+				}
+			}
 		}
 	}
 

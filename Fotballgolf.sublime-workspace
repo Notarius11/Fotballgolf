@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"bord-",
+				"border-right"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"font",
+				"font-heading"
+			],
+			[
+				"no",
+				"no-gutters"
+			],
+			[
+				"course",
+				"courseCard"
+			],
+			[
 				"color",
 				"color-border-standard"
 			],
@@ -44,10 +64,6 @@
 				"border"
 			],
 			[
-				"font",
-				"font-family"
-			],
-			[
 				"u",
 				"ul	Tag"
 			],
@@ -67,7 +83,7 @@
 			"file": "susyTest.html",
 			"settings":
 			{
-				"buffer_size": 3745,
+				"buffer_size": 8594,
 				"line_ending": "Windows"
 			}
 		},
@@ -75,7 +91,7 @@
 			"file": "scss/susylayout.scss",
 			"settings":
 			{
-				"buffer_size": 6374,
+				"buffer_size": 8414,
 				"line_ending": "Windows"
 			}
 		},
@@ -124,6 +140,7 @@
 	},
 	"file_history":
 	[
+		"/C/Web Projects/Fotballgolf/scss/layout.scss",
 		"/C/Web Projects/Fotballgolf/main.html",
 		"/C/Web Projects/Stavanger Fotballgolf/main.html",
 		"/C/Web Projects/Stavanger Fotballgolf/javascript/main.js",
@@ -151,6 +168,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"startGameWrapper"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -168,7 +186,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -176,15 +194,15 @@
 					"file": "susyTest.html",
 					"settings":
 					{
-						"buffer_size": 3745,
+						"buffer_size": 8594,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2559,
-								2559
+								8070,
+								8070
 							]
 						],
 						"settings":
@@ -193,7 +211,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 357.0,
+						"translation.y": 2970.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -203,15 +221,15 @@
 					"file": "scss/susylayout.scss",
 					"settings":
 					{
-						"buffer_size": 6374,
+						"buffer_size": 8414,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2109,
-								2109
+								406,
+								424
 							]
 						],
 						"settings":
@@ -220,7 +238,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1350.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

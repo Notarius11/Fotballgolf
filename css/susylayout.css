@@ -6,6 +6,9 @@ a {
   text-align: center;
   display: block;
   cursor: hand; }
+  a:hover {
+    color: #f0f0f0;
+    background-color: #6e6e6e; }
 
 .page {
   max-width: 100%;
@@ -64,7 +67,6 @@ body {
     float: left; } }
 
 .unselected {
-  background-color: white;
   border-bottom: 1px solid #072754;
   background-color: #f0f0f0;
   color: #6e6e6e; }
@@ -132,6 +134,13 @@ body {
         	background-color: $color-forecolor-menuheader;
         	color: $color-bacground-menuheader;
         }*/ }
+  .groupBox .startGameWrapper {
+    background-color: #f0f0f0;
+    color: #6e6e6e;
+    height: 50px; }
+    .groupBox .startGameWrapper a {
+      border-bottom: none;
+      height: 100%; }
   .groupBox .groupBoxHeader {
     background-color: #f0f0f0;
     color: #6e6e6e;
@@ -233,6 +242,90 @@ body {
           -webkit-box-shadow: 0 0 5px #888888;
           box-shadow: 0 0 5px #888;
           font-size: 50%; }
+    .groupBox .groupContent .courseWrapper {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      float: left;
+      padding-left: 1.66667%;
+      padding-right: 1.66667%; }
+      .groupBox .groupContent .courseWrapper .courseCard {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 33.33333%;
+        float: left;
+        padding-left: 1.66667%;
+        padding-right: 1.66667%;
+        margin-top: 17.5px; }
+        .groupBox .groupContent .courseWrapper .courseCard .courseHeader {
+          border: 1px solid #6e6e6e;
+          height: 55px;
+          text-align: center;
+          background-color: #f0f0f0;
+          -moz-box-shadow: 0 0 5px #888;
+          -webkit-box-shadow: 0 0 5px #888888;
+          box-shadow: 0 0 5px #888; }
+        .groupBox .groupContent .courseWrapper .courseCard .courseInfo {
+          border-left: 1px solid #6e6e6e;
+          border-right: 1px solid #6e6e6e;
+          border-bottom: 1px solid #6e6e6e;
+          -moz-box-shadow: 0 0 5px #888;
+          -webkit-box-shadow: 0 0 5px #888888;
+          box-shadow: 0 0 5px #888;
+          font-size: 50%; }
+        .groupBox .groupContent .courseWrapper .courseCard .courseFooter {
+          height: 30px;
+          text-align: center;
+          border-left: 1px solid #6e6e6e;
+          border-right: 1px solid #6e6e6e;
+          border-bottom: 1px solid #6e6e6e;
+          background-color: #f0f0f0;
+          -moz-box-shadow: 0 0 5px #888;
+          -webkit-box-shadow: 0 0 5px #888888;
+          box-shadow: 0 0 5px #888;
+          font-size: 70%; }
+          .groupBox .groupContent .courseWrapper .courseCard .courseFooter div {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: 50%;
+            float: left;
+            height: 100%;
+            border-left: 1px solid #072754; }
+            .groupBox .groupContent .courseWrapper .courseCard .courseFooter div:first-child {
+              border-left: none; }
+            .groupBox .groupContent .courseWrapper .courseCard .courseFooter div a {
+              border-bottom: none;
+              height: 100%; }
+    .groupBox .groupContent .sheetPrHole {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      float: left;
+      padding-left: 1.66667%;
+      padding-right: 1.66667%; }
+      .groupBox .groupContent .sheetPrHole .sheetHeader {
+        color: #6BC6FF;
+        border-bottom: 1px solid #6e6e6e; }
+      .groupBox .groupContent .sheetPrHole .sheetPlayer {
+        border-bottom: 1px solid #6e6e6e;
+        background-color: #f0f0f0;
+        color: #6e6e6e; }
+      .groupBox .groupContent .sheetPrHole div div {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 16.66667%;
+        float: right; }
+        .groupBox .groupContent .sheetPrHole div div:first-child {
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 83.33333%;
+          float: left; }
 
 .groupInnerBox {
   background-color: white; }

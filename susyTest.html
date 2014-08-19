@@ -16,91 +16,214 @@
 			<div class="menuItem selected"><a class="icon-play-circled2 btn-enabled" href="#"></a>Play</div>
 		</div>
 		<div class="contentMain">
-			<div class="groupBox" >
-				<div id="groupTypeOfPlay">
-						<div><a class="unselected" href="#">Team Play</a></div>
-						<div><a class="unselected" href="#">Individual</a></div>
+			<div id="game">
+				<div id="registration"  style="display: none;">
+					<div class="groupBox" >
+						<div id="groupTypeOfPlay">
+								<div><a class="unselected" href="#">Team Play</a></div>
+								<div><a class="selected" href="#">Individual</a></div>
+							</div>
+							<!-- <div id="topDD" class="ui-DropdownWrapper" onclick="activateDropdown(this)">
+								<span>Type of play</span>
+								<ul class="ui-Dropdown">
+									<li>
+										<a href="#"></a>Team 1</a>
+									</li>
+									<li>
+										<a href="#"></a>Team 2</a>
+									</li>
+								</ul>
+							</div> -->
 					</div>
-					<!-- <div id="topDD" class="ui-DropdownWrapper" onclick="activateDropdown(this)">
-						<span>Type of play</span>
-						<ul class="ui-Dropdown">
-							<li>
-								<a href="#"></a>Team 1</a>
-							</li>
-							<li>
-								<a href="#"></a>Team 2</a>
-							</li>
-						</ul>
-					</div> -->
-			</div>
-			<div class="groupBox">
-				<div class="groupBoxHeader">
-					<div class="groupText" onclick="showHideGroup(this)">Add players</div>
-					<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
-				</div>
-				<div class="groupContent">
-					<div class="playerWrapper">
-						<span>Selected Players:</span>
-						<div id="addedPlayers">
-							<div class="playerCard">
-								<div class="profileHeader">Pic</div>
-								<div class="profileInfo">
-									<div class="profileName">Name: Christer</div>
-									<div class="profileAge">Age: 32</div>
-									<div class="profileGender">Gender: Male</div>
+					<div class="groupBox">
+						<div class="groupBoxHeader">
+							<div class="groupText" onclick="showHideGroup(this)">Add players</div>
+							<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
+						</div>
+						<div class="groupContent">
+							<div class="playerWrapper">
+								<span>Selected Players:</span>
+								<div id="addedPlayers">
+									<div class="playerCard">
+										<div class="profileHeader">Pic</div>
+										<div class="profileInfo">
+											<div class="profileName">Name: Christer</div>
+											<div class="profileAge">Age: 32</div>
+											<div class="profileGender">Gender: Male</div>
+										</div>
+									</div>
+									<div class="playerCard">
+										<div class="profileHeader">Pic</div>
+										<div class="profileInfo">
+											<div class="profileName">Name: Dagi</div>
+											<div class="profileAge">Age: 32</div>
+											<div class="profileGender">Gender: Male</div>
+										</div>
+									</div>
+									<div class="playerCard">
+										<div class="profileHeader">Pic</div>
+										<div class="profileInfo">
+											<div class="profileName">Name: Sindre H</div>
+											<div class="profileAge">Age: 60</div>
+											<div class="profileGender">Gender: Male</div>
+										</div>
+									</div>							
 								</div>
 							</div>
-							<div class="playerCard">
-								<div class="profileHeader">Pic</div>
-								<div class="profileInfo">
-									<div class="profileName">Name: Dagi</div>
-									<div class="profileAge">Age: 32</div>
-									<div class="profileGender">Gender: Male</div>
+							<div class="contentWrapper">
+								<span>Available Players:</span>
+								<div id="availablePlayers">
+									<div class="playerSearch">
+										
+									</div>
+									
+									<div class="playerCard">
+										<div class="profileHeader">Pic</div>
+										<div class="profileInfo">
+											<div class="profileName">Name: Roy</div>
+											<div class="profileAge">Age: 32</div>
+											<div class="profileGender">Gender: Male</div>
+										</div>
+									</div>
+									<div class="playerCard">
+										<div class="profileHeader">Pic</div>
+										<div class="profileInfo">
+											<div class="profileName">Name: Sindre D.</div>
+											<div class="profileAge">Age: 32</div>
+											<div class="profileGender">Gender: Male</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="playerCard">
-								<div class="profileHeader">Pic</div>
-								<div class="profileInfo">
-									<div class="profileName">Name: Sindre H</div>
-									<div class="profileAge">Age: 60</div>
-									<div class="profileGender">Gender: Male</div>
-								</div>
-							</div>							
 						</div>
 					</div>
-					<div class="playerWrapper">
-						<span>Available Players:</span>
-						<div id="availablePlayers">
-							<div class="playerSearch">
-								
-							</div>
-							
-							<div class="playerCard last">
-								<div class="profileHeader">Pic</div>
-								<div class="profileInfo">
-									<div class="profileName">Name: Roy</div>
-									<div class="profileAge">Age: 32</div>
-									<div class="profileGender">Gender: Male</div>
+					<div class="groupBox">
+						<div class="groupBoxHeader">
+							<div class="groupText" onclick="showHideGroup(this)">Choose Course</div>
+							<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
+						</div>
+						<div class="groupContent">
+							<div class="courseWrapper">
+								<div class="courseCard">
+									<div class="courseHeader">Valuen</div>
+									<div class="courseInfo">
+										<div class="courseName">Some Info</div>
+									</div>
+									<div class="courseFooter">
+										<div><a class="unselected" href="#" id="vaulen_18">18</a></div>
+										<div><a class="unselected" href="#" id="vaulen_25">25</a></div>
+									</div>
 								</div>
+								<div class="courseCard">
+									<div class="courseHeader">Gosen</div>
+									<div class="courseInfo">
+										<div class="courseName">Some Info</div>
+									</div>
+									<div class="courseFooter">
+										<div><a class="unselected" href="#" id="gosen_18">18</a></div>
+										<div><a class="unselected" href="#" id="gosen_25">25</a></div>
+									</div>
+								</div>
+								<div class="courseCard">
+									<div class="courseHeader">Madla</div>
+									<div class="courseInfo">
+										<div class="courseName">Some Info</div>
+									</div>
+									<div class="courseFooter">
+										<div><a class="selected" href="#" id="madla_18">18</a></div>
+										<div><a class="unselected" href="#" id="madla_25">25</a></div>
+									</div>
+								</div>							
 							</div>
-							<div class="playerCard">
-								<div class="profileHeader">Pic</div>
-								<div class="profileInfo">
-									<div class="profileName">Name: Sindre D.</div>
-									<div class="profileAge">Age: 32</div>
-									<div class="profileGender">Gender: Male</div>
+						</div>
+					</div>
+					<div class="groupBox">
+						<div class="startGameWrapper">
+							<a class="unselected" href="#" id="startGame">Start</a>
+						</div>
+					</div>
+				</div>
+				<div id="scoresheet">
+					<div class="groupBox">
+						<div class="groupBoxHeader">
+							<div class="groupText" onclick="showHideGroup(this)">Hole 1</div>
+							<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
+						</div>
+						<div class="groupContent">
+							<div class="sheetPrHole">
+								<div class="sheetHeader">
+									<div class="sheetName">Name</div>
+									<div class="sheetScore">Score</div>
+								</div>
+								<div class="sheetPlayer" id="hole1_player1">
+									<div class="sheetName">Christer</div>
+									<div class="sheetScore"><a href="#">3</a></div>
+								</div>
+								<div class="sheetPlayer" id="hole1_player2">
+									<div class="sheetName">Dagi</div>
+									<div class="sheetScore"><a href="#">8</a></div>
+								</div>
+								<div class="sheetPlayer" id="hole1_player3">
+									<div class="sheetName">Sindre H</div>
+									<div class="sheetScore"><a href="#">3</a></div>
 								</div>
 							</div>
 						</div>
 					</div>
+					<div class="groupBox">
+						<div class="groupBoxHeader">
+							<div class="groupText" onclick="showHideGroup(this)">Hole 2</div>
+							<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
+						</div>
+						<div class="groupContent">
+							<div class="sheetPrHole">
+								<div class="sheetHeader">
+									<div class="sheetName">Name</div>
+									<div class="sheetScore">Score</div>
+								</div>
+								<div class="sheetPlayer" id="hole2_player1">
+									<div class="sheetName">Christer</div>
+									<div class="sheetScore"><a href="#">3</a></div>
+								</div>
+								<div class="sheetPlayer" id="hole2_player2">
+									<div class="sheetName">Dagi</div>
+									<div class="sheetScore"><a href="#">8</a></div>
+								</div>
+								<div class="sheetPlayer" id="hole2_player3">
+									<div class="sheetName">Sindre H</div>
+									<div class="sheetScore"><a href="#">3</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="groupBox">
+						<div class="groupBoxHeader">
+							<div class="groupText" onclick="showHideGroup(this)">Hole 3</div>
+							<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
+						</div>
+						<div class="groupContent">
+							<div class="sheetPrHole">
+								<div class="sheetHeader">
+									<div class="sheetName">Name</div>
+									<div class="sheetScore">Score</div>
+								</div>
+								<div class="sheetPlayer" id="hole3_player1">
+									<div class="sheetName">Christer</div>
+									<div class="sheetScore"><a href="#">3</a></div>
+								</div>
+								<div class="sheetPlayer" id="hole3_player2">
+									<div class="sheetName">Dagi</div>
+									<div class="sheetScore"><a href="#">8</a></div>
+								</div>
+								<div class="sheetPlayer" id="hole3_player3">
+									<div class="sheetName">Sindre H</div>
+									<div class="sheetScore"><a href="#">3</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="scoresheetFooter" style="height:30px; position: fixed; bottom: 0; background-color:#E3E3E3; border-top: 1px solid #6E6E6E;"><div><a href="#">Show current score!</a></div></div>
 				</div>
-			</div>
-			<div class="groupBox">
-				<div class="groupBoxHeader">
-					<div class="groupText" onclick="showHideGroup(this)">Choose Course</div>
-					<div class="groupBackIcon icon-down-dir" onclick="showHideGroup(this)"></div>
-				</div>
-				<div class="groupContent"></div>
 			</div>
 		</div>
 	</body>
