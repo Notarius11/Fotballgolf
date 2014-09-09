@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/pagelayout.css" />
+	</head>
+	<body>
+		<div id="mainHeader">
+			Header
+		</div>
+		<div id="mainMenu">
+			Menu
+		</div>
+		<div id="mainContent">
+			Content
+		</div>
+	</body>
+</html>

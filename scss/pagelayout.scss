@@ -1,0 +1,279 @@
+@import "susy";
+@import "breakpoint";
+
+$susy: (
+  columns: 12,
+  gutter-position: inside
+);
+
+$small-screen: 1200px;
+$large-screen: 2000px;
+$color-main: #424242;
+$color-font: #424242;
+$color-border: #787878;
+$color-second: #DB7D00;
+
+
+.page { @include container;}
+
+body {
+	@include span (12 of 12 no-gutters);
+	margin: 0px;
+	background-color: #F5F5F5;
+
+	@include breakpoint($small-screen){
+		.mainSection {
+			@include span (12 of 12 no-gutters);
+		}
+	}
+	@include breakpoint($large-screen){
+		.leftSection {
+			@include span(3 of 12 no-gutters);
+		}
+		.mainSection {
+			@include span(6 of 12 no-gutters);
+		}
+		.rightSection {
+			@include span(3 of 12 no-gutters);
+		}
+	}
+
+	#mainHeader {
+		background-color: $color-main;
+		border-bottom: $color-border;
+		color: white;
+		height: 150px;
+		font-size: 60px;
+		font-family: fontello;
+		@include breakpoint($small-screen){
+			#logo {
+				@include span(2 of 12 last no-gutters);
+				height: 150px;
+				color: white;
+				
+			}	
+			#club-name {
+				@include span(8 of 12 no-gutters);
+				text-align: center;
+				
+			}
+			#mainMenu {
+				@include span(2 of 12 no-gutters);
+				text-align: center;
+				font-size: 100px;
+				display: block;
+				height: 150px;
+				
+				&.enabled {
+					background-color:white;
+					
+					a {
+						color: $color-font;
+					}
+				}
+			}
+		}
+		@include breakpoint($large-screen){
+			
+			#logo {
+				@include span(2 of 12 last);
+				height: 150px;
+				color: white;
+				padding-top: 10px;
+			}	
+			#club-name {
+				@include span(8 of 12);
+				text-align: center;
+				padding-top: 10px;
+				height: 150px;
+			}
+			#mainMenu {
+				@include span(2 of 12);
+				text-align: center;
+				font-size: 100px;
+				display: block;
+				height: 150px;
+				padding-top: 10px;
+			}
+		}
+	}
+	#sectionHeading {
+		@include breakpoint($small-screen){
+			@include span(12 of 12);
+			height: 100px;
+			text-align: center;
+			font-size: 60px;
+			color: $color-font ;
+			background-color: white;
+			border-bottom: 1px solid $color-border; 
+		}
+	}
+	#mainContent {
+		@include breakpoint($small-screen){
+			@include span(12 of 12);
+			padding-top: 5px;
+
+			.itemGroup {
+				@include span(12 of 12);
+				margin-top: 10px;
+				background-color: white;
+				border: 1px solid #C4C4C4;
+				-moz-box-shadow: 0 0 3px #888;
+				-webkit-box-shadow: 0 0 5px#888;
+
+				/*&:nth-child(3) {
+					@include span(4 of 12 last);
+				} */
+				.itemHeader {
+					border-bottom: 1px solid $color-border;
+					color: $color-font;
+					font-weight: bold;
+				}
+				.itemContent {
+					span {
+						
+						font-size: 60px;
+					}
+					
+				}
+				.itemFooter {
+					border-top: 1px solid $color-border;
+					color: $color-main;
+					span {
+						@include span(4 of 12);
+						font-size: 30px;
+						&:nth(2) {
+							@include span(4 of 12 last);
+							text-align: right;
+						}
+					}
+				}
+				.eventWrapperHeader {
+					margin-bottom: 10px;
+					text-align: center;
+					color: $color-font;
+					background-color: white;
+				}
+				.eventSubWrapper {
+					color: white;
+					background-color: #919191;
+					border-top: 1px solid $color-main;
+					border-left: 1px solid $color-main;
+					border-right: 1px solid $color-main;
+				}
+				.eventHeader {
+					height: 100px;
+					
+					#eventDate {
+						@include span(2 of 12);
+						height: 100%;
+						text-align: center;
+						color: $color-second;
+						background-color: $color-main;
+						border-bottom: 1px solid $color-second;	
+						border-right: 1px solid $color-second;	
+						span {
+							@include span(2 of 2);
+						}
+					}
+					.eventBottomText {
+							font-size: 12px;
+					}
+					.eventToppText {
+							font-size: 60px;
+					}
+					#eventTitle {
+						@include span(8 of 12);
+						text-align: center;
+						height: 100%;
+						border-bottom: 1px solid $color-main;
+						span {
+							@include span(8 of 8);
+						}
+					}
+					#eventPlayers {
+						@include span(2 of 12 last);
+						height: 100%;
+						text-align: center;
+						color: $color-second;
+						background-color: $color-main;
+						border-bottom: 1px solid $color-second;	
+						border-left: 1px solid $color-second;
+						span {
+							@include span(2 of 2);	
+						}
+						
+					}
+				}
+				.eventContent {
+					background-color: white;
+					color: $color-main;
+					font-size: 30px;
+				}
+			}
+		}
+	}
+	#mainFooter {
+		@include span(12 of 12);
+		height: 100px;
+
+		font-size: 60px;
+
+		color: #BA2282;
+		a {
+			color: #BA2282;
+		}
+		border-top: 1px solid #5C0F40;
+		position: fixed;
+		bottom: 0;
+		background-color: white;
+	}
+}
+.groupContent {
+	font: 60px fontello, serif;
+
+	background-color: white;
+}
+
+// Standard tag coding
+a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	display: block;
+	cursor: hand;
+	height: 100%;
+}
+
+.menuNavigator {
+	border-left: 1px solid #5C0F40;
+	border-right: 1px solid #5C0F40;
+	border-bottom: 1px solid #5C0F40;
+	position: absolute;
+	background-color: white;
+	width: 300px;
+	display: none;
+	.navHeader {
+		display: block;
+		list-style-type: disc;
+		padding: 0px;
+		margin: 0px;
+		li {
+			padding: 5px;
+			list-style: none;
+			display: list-item;
+			text-align: -webkit-match-parent;
+			cursor: hand;
+			border-bottom:  1px solid $color-border;
+			height: 100px;
+			a {
+				color: $color-font;
+				font-size: 60px;
+				text-align: left;
+			}
+		}
+	}
+	&.enabled {
+		display: block;
+	}
+}

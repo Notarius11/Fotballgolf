@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html class="page">
+	<head>
+		<link rel="stylesheet" href="css/pagelayout.css" />
+		<link rel="stylesheet" href="css/fontello.css" />
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="javascript/main_homepage.js"></script>
+	</head>
+	<body>
+		<div id="leftSection">
+		</div>
+		<div id="mainSection">
+			<div id="menuNavigator">
+				<div class="menuNavigator">
+					<ul class="navHeader">
+						<li class="navItem">
+							<a id="navItemAboutUs" href="#" onclick="navItemClick(this)">Om oss</a>
+						</li>
+						<li class="navItem">
+							<a id="navItemEvents" href="#" onclick="navItemClick(this)">Events</a>
+						</li>
+						<li class="navItem">
+							<a id="navItemStatistics" href="#" onclick="navItemClick(this)">Statistikk</a>
+						</li>
+						<li class="navItem">
+							<a id="navItemFields" href="#" onclick="navItemClick(this)">Baner</a>
+						</li>
+						<li class="navItem">
+							<a id="navItemKontakt" href="#" onclick="navItemClick(this)">Kontakt Oss</a>
+						</li>
+						<li class="navItem">
+							<a id="navItemLogin" href="#" onclick="navItemClick(this)">App Login</a>
+						</li>
+
+					</ul>	
+				</div>
+			</div>
+			<div id="mainHeader">
+				<div id="mainMenu">
+					<a id="menuButton" class="icon-list" href="#" onclick="menuClick(this);"></a>
+				</div>
+				<div id="club-name">Stavanger Fotballgolf</div>
+				<div id="logo">Logo</div>
+			</div>
+			<div id="sectionHeading">
+				<span>Om oss</span>
+			</div>
+			<div id="mainContent">
+				<div id="aboutUs" class="groupContent">
+					<div class="itemGroup">
+						<div class="itemContent">
+							<span>Stavanger Fotballgolf ble etablert den 23.07.2014. Klubben best&#229;r av spillere i alle aldre og begge kj&#248;nn og er i stadig vekst. 
+								Organisasjonen best&#229;r av en styreleder, nestleder, fire styremedlemmer og to varamedlemmer. Det er etablert baner p&#229; Gosen, Madla og 
+								Vaulen. Det er ogs&#229; planer om &#229; f&#229; i stand en ny bane p&#229; Hinna i n&#230;rmeste fremtid. Stavanger Fotballgolf har ogs&#229; intensjoner om &#229; f&#229; til 
+								et samarbeid med en eller flere av de respektive golfklubbene i distriktet.
+								<br>
+								<br>
+								Stavanger Fotballgolf har et m&#229;l om &#229; synliggj&#248;re en ny sport i Stavangeromr&#229;det. Vi vil utnytte det store potensialet sporten 
+								har. Fotballgolf skal v&#230;re et selvskrevent alternativ for alle som &#248;nsker aktivitet, uansett alder og kj&#248;nn. Vi &#248;nsker &#229; bidra til &#248;kt 
+								aktivitetsniv&#229;et i samfunnet samt tilby en sportsaktivitet som byr p&#229; idrettsglede og en mulighet for alle til &#229; delta. Dette skal ogs&#229; v&#230;re et 
+								lavterskeltilbud til de som ikke driver aktivt med sport.
+							</span>
+						</div>
+					</div>
+				</div>
+				<div id="fields" class="groupContent"  style="display:none;">
+				</div>
+				<div id="contact" class="groupContent" style="display:none;">
+					<div class="itemGroup">
+						<div class="itemContent">
+							<span>Hvis du &#248;nsker &#229; kj&#248;pe godkjente golfhull, bestille events, teambuilding eller har andre sp&#248;sm&#229;l s&#229; er det bare &#229; ta kontakt!</span><br><br>
+							<span style="float:left;">Mail: <a href="mailto:admin@stavangerfotballgolf.no" style="color: blue;">admin@stavangerfotballgolf.no</a></span><br>
+						</div>
+					</div>
+				</div>
+				<div id="statistics" class="groupContent" style="display:none;">
+					<div class="itemGroup">
+						<div class="itemHeader">Vaulen</div>
+						<div class="itemContent">
+							<span>72 spark - Dagi</span><br>
+							<span>76 spark - Joackim</span><br>
+							<span>82 spark - Jan Erik</span><br>
+							<span>82 spark - Karl Magnus</span><br>
+							<span>84 spark - Sindre G</span><br>
+							<span>84 spark - Sindre D</span><br>
+							<span>85 spark - Christer</span><br>
+							<span>87 spark - Atle J</span><br>
+							<span>87 spark - Erlend</span><br>
+							<span>87 spark - Kjartan</span><br>
+							<span>92 spark - Christian</span><br>
+							<span>95 spark - David</span><br>
+							<span>96 spark - Eirik</span><br>
+							<span>96 spark - Roy</span><br>
+							<span>97 spark - Audun</span><br>
+							<span>98 spark - Thomas</span><br>
+							<span>98 spark - Tom Henrik</span><br>
+							<span>99 spark - Atle M</span><br>
+							<span>101 spark - Lars</span><br>
+							<span>105 spark - &#216;yvind</span><br>
+							<span>108 spark - Haakon</span><br>
+						</div>
+					</div>
+					<div class="itemGroup">
+						<div class="itemHeader">Madla</div>
+						<div class="itemContent">
+							<span>78 spark - Dagi</span><br>
+							<span>82 spark - Christer</span><br>
+							<span>99 spark - Sindre</span><br>
+							<span>103 spark - David</span><br>
+							<span>102 spark - Krister T</span><br>
+							<span>115 spark - Joakim B</span><br>
+						</div>
+					</div>
+				</div>
+				<div id="events" class="groupContent" style="display:none;">
+					<div class="itemGroup">
+						<div class="eventWrapper" id="#upcomingEvents">
+							<div class="eventSubWrapper" id="upcomingEventList">
+								<div class="eventHeader">
+									<div id="eventDate"><span class="eventToppText">11</span><span class="eventBottomText">Oktober</span></div>
+									<div id="eventTitle"><span class="eventToppText">Stavanger Open</span><span class="eventBottomText">Klikk for &#229; registrere deg</span></div>
+									<div id="eventPlayers"><span class="eventToppText">0</span><span class="eventBottomText">Registered</span></div>
+								</div>
+								<div class="eventContent" style="display:none;">Stavanger fotballgolf arrangerer for første gang en fotballgolf event. Denne er åpen for alle til å melde seg på. Det vil være både Viking og Sandnes Ulf A-lag spillere som deltakere. Meld deg på å se om ikke du klarer å slå dem!</div>
+								<div class="eventHeader">
+									<div id="eventDate"><span class="eventToppText">30</span><span class="eventBottomText">November</span></div>
+									<div id="eventTitle"><span class="eventToppText">Vaulen frosty</span><span class="eventBottomText">Klikk for &#229; registrere deg</span></div>
+									<div id="eventPlayers"><span class="eventToppText">0</span><span class="eventBottomText">Registered</span></div>
+								</div>
+								<div class="eventContent" style="display:none;">Stavanger fotballgolf arrangerer for første gang en fotballgolf event. Denne er åpen for alle til å melde seg på. Det vil være både Viking og Sandnes Ulf A-lag spillere som deltakere. Meld deg på å se om ikke du klarer å slå dem!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="rightSection"></div>
+	</body>
+</html>

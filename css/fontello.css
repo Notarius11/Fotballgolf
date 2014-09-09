@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'fontello';
-  src: url('font/fontello.eot?21331207');
-  src: url('font/fontello.eot?21331207#iefix') format('embedded-opentype'),
-       url('font/fontello.woff?21331207') format('woff'),
-       url('font/fontello.ttf?21331207') format('truetype'),
-       url('font/fontello.svg?21331207#fontello') format('svg');
+  src: url('../css/font/fontello.eot?4526337');
+  src: url('../css/font/fontello.eot?4526337#iefix') format('embedded-opentype'),
+       url('../css/font/fontello.woff?4526337') format('woff'),
+       url('../css/font/fontello.ttf?4526337') format('truetype'),
+       url('../css/font/fontello.svg?4526337#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?21331207#fontello') format('svg');
+    src: url('../font/fontello.svg?4526337#fontello') format('svg');
   }
 }
 */
@@ -50,14 +50,10 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-home:before { content: '\e800'; } /* '' */
-.icon-book:before { content: '\e801'; } /* '' */
-.icon-check:before { content: '\e802'; } /* '' */
-.icon-play-circled2:before { content: '\e803'; } /* '' */
-.icon-user:before { content: '\e804'; } /* '' */
-.icon-trash:before { content: '\e805'; } /* '' */
-.icon-info:before { content: '\e806'; } /* '' */
-.icon-calendar:before { content: '\e807'; } /* '' */
-.icon-left-circled2:before { content: '\e808'; } /* '' */
-.icon-right-circled2:before { content: '\e809'; } /* '' */
-.icon-down-dir:before { content: '\e80a'; } /* '' */
+.icon-left-circled2:before { content: '\e800'; } /* '' */
+.icon-right-circled2:before { content: '\e801'; } /* '' */
+.icon-info:before { content: '\e802'; } /* '' */
+.icon-home:before { content: '\e803'; } /* '' */
+.icon-play-circled2:before { content: '\e804'; } /* '' */
+.icon-list:before { content: '\e805'; } /* '' */
+.icon-cancel:before { content: '\e806'; } /* '' */
