@@ -17,7 +17,46 @@ function menuClick(pControl){
 		$(pControl).addClass('icon-cancel');
 	}
 }
+function eventClick(pControl){
+	if ($(pControl).find('.eventContent').is(':visible')) {
+		$(pControl).find('.eventContent').hide();
+	}
+	else {
+		$(pControl).find('.eventContent').show();	
+	}
+}
 
+function navItemClickLarge(pControl) {
+	// Hide all main content and the show the correct
+	$('#mainContent').find('.groupContent').hide();
+
+	// Hide toggling of all other nav items and toggle selected
+	$('#mainMenuLarge').find('a').removeClass('toggled');
+	$(pControl).addClass('toggled');
+
+	if ($(pControl).is($('#navItemLargeAboutUs'))) {
+		$('#aboutUs').show();
+		$('#sectionHeading span').text('Om oss');
+	} else if($(pControl).is($('#navItemLargeKontakt'))) {
+		$('#contact').show();
+		$('#sectionHeading span').text('Kontakt oss');
+	} else if($(pControl).is($('#navItemLargeFields'))) {
+		$('#fields').show();
+		GetFieldsData();
+		$('#sectionHeading span').text('Baner');
+	} else if ($(pControl).is($('#navItemLargeStatistics'))) {
+		$('#statistics').show();
+		$('#sectionHeading span').text('Statistikk');
+	} else if ($(pControl).is($('#navItemLargeEvents'))) {
+		$('#events').show();
+		$('#sectionHeading span').text('Kommende Events');
+	}
+
+	$('.menuNavigator').removeClass('enabled');
+	$('#menuButton').addClass('icon-list');
+	$('#menuButton').removeClass('icon-cancel');
+	$('#menuButton').parent().removeClass('enabled');
+}
 function navItemClick(pControl) {
 	// Hide all nav and the show the correct
 	$('#mainContent').find('.groupContent').hide();

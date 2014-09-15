@@ -6,63 +6,160 @@ $susy: (
   gutter-position: inside
 );
 
-$small-screen: 1200px;
+$small-screen: 700px;
+$minor-screen: 100px;
 $large-screen: 2000px;
 $color-main: #424242;
 $color-font: #424242;
 $color-border: #787878;
 $color-second: #DB7D00;
 
+$font-size: 16px;
 
-.page { @include container;}
+
+.page { 
+	@include container;
+	height: 100%;
+}
+h1 {
+	margin: 0;
+}
+h2 {
+	margin: 0;
+	color: $color-font;
+}
+h3 {
+	margin: 0;
+	color: $color-font;
+}
 
 body {
-	@include span (12 of 12 no-gutters);
+	
+	@include span (12 of 12 no-gutters) {
+		@include breakpoint($small-screen){
+			#leftSection {
+				display: none;
+			}
+			#mainSection {
+				@include span (12 of 12 no-gutters);
+				height: 100%;
+			}
+			#rightSection {
+				display: none;
+			}
+		}
+		@include breakpoint($minor-screen){
+			#leftSection {
+				display: none;
+			}
+			#mainSection {
+				@include span (12 of 12 no-gutters);
+				height: 100%;
+			}
+			#rightSection {
+				display: none;
+			}
+		}
+		@include breakpoint($large-screen){
+			#leftSection {
+				@include span(3 of 12 no-gutters);
+				display: block;
+			}
+			#mainSection {
+				@include span(6 of 12 no-gutters);
+				border-left: 1px solid $color-border;
+				border-right: 1px solid $color-border;
+				height: 100%;
+				background-color: white;
+
+				h2 {
+					font-size: 300%;
+				}
+				h3{
+					font-size: 200%;
+				}
+			}
+			#rightSection {
+				@include span(3 of 12 no-gutters);
+				display: block;
+			}
+		}
+	}
+
 	margin: 0px;
 	background-color: #F5F5F5;
+	font-family: fontello;
+	height: 100%;
 
-	@include breakpoint($small-screen){
-		.mainSection {
-			@include span (12 of 12 no-gutters);
-		}
-	}
-	@include breakpoint($large-screen){
-		.leftSection {
-			@include span(3 of 12 no-gutters);
-		}
-		.mainSection {
-			@include span(6 of 12 no-gutters);
-		}
-		.rightSection {
-			@include span(3 of 12 no-gutters);
-		}
-	}
 
 	#mainHeader {
-		background-color: $color-main;
-		border-bottom: $color-border;
-		color: white;
-		height: 150px;
-		font-size: 60px;
-		font-family: fontello;
-		@include breakpoint($small-screen){
+		
+		@include breakpoint($minor-screen){
 			#logo {
 				@include span(2 of 12 last no-gutters);
-				height: 150px;
+				//height: 150px;
+				background-color: $color-main;
+				border-bottom: $color-border;
 				color: white;
-				
+				padding-bottom: 10px;
+				font-size: 220%;
 			}	
 			#club-name {
 				@include span(8 of 12 no-gutters);
 				text-align: center;
-				
+				background-color: $color-main;
+				border-bottom: $color-border;
+				color: white;
+				padding-bottom: 10px;
+				font-size: 220%;
 			}
 			#mainMenu {
 				@include span(2 of 12 no-gutters);
 				text-align: center;
-				font-size: 100px;
 				display: block;
-				height: 150px;
+				background-color: $color-main;
+				border-bottom: $color-border;
+				color: white;
+				padding-bottom: 10px;
+				font-size: 220%;
+				
+				&.enabled {
+					background-color:white;
+					
+					a {
+						color: $color-font;
+					}
+				}
+			}
+		}
+		@include breakpoint($small-screen){
+			#logo {
+				@include span(2 of 12 last no-gutters);
+				//height: 150px;
+				background-color: $color-main;
+				border-bottom: $color-border;
+				color: white;
+				padding-bottom: 10px;
+				font-size: 320%;
+			}	
+			#club-name {
+				@include span(8 of 12 no-gutters);
+				text-align: center;
+				background-color: $color-main;
+				border-bottom: $color-border;
+				color: white;
+				padding-bottom: 10px;
+				font-size: 320%;
+			}
+			#mainMenu {
+				@include span(2 of 12 no-gutters);
+				text-align: center;
+				display: block;
+				background-color: $color-main;
+				border-bottom: $color-border;
+				color: white;
+				padding-bottom: 10px;
+				font-size: 320%;
 				
 				&.enabled {
 					background-color:white;
@@ -77,49 +174,90 @@ body {
 			
 			#logo {
 				@include span(2 of 12 last);
-				height: 150px;
 				color: white;
 				padding-top: 10px;
+				font-size: 420%;
 			}	
 			#club-name {
-				@include span(8 of 12);
-				text-align: center;
+				@include span(10 of 12);
 				padding-top: 10px;
-				height: 150px;
+				text-align: center;
+				font-size: 420%;
 			}
 			#mainMenu {
-				@include span(2 of 12);
-				text-align: center;
-				font-size: 100px;
-				display: block;
-				height: 150px;
-				padding-top: 10px;
+				display: none;
+			}
+		}
+	}
+	#mainMenuLarge {
+		@include breakpoint($minor-screen){
+			display: none;
+		}
+		@include breakpoint($large-screen){
+			display: block;
+			background-color: $color-main;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			-moz-box-shadow: 0 0 3px #888;
+			-webkit-box-shadow: 0 0 5px#888;
+			border-bottom: 1px solid $color-border;
+			@include span(6 of 6){
+				div {
+					@include span(1 of 6) {
+						a {
+							font-size: 150%;
+							&:hover {
+								-moz-box-shadow: inset 0 0 10px #000000;
+								-webkit-box-shadow: inset 0 0 10px #000000;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
 	#sectionHeading {
-		@include breakpoint($small-screen){
+		@include breakpoint($minor-screen){
 			@include span(12 of 12);
-			height: 100px;
+			display: block;
 			text-align: center;
-			font-size: 60px;
 			color: $color-font ;
 			background-color: white;
-			border-bottom: 1px solid $color-border; 
+			border-bottom: 1px solid $color-border;
+			font-size: 100%;
+		}
+		@include breakpoint($small-screen){
+			display: block;
+			font-size: 200%;
+		}
+		@include breakpoint($large-screen){
+			display: none;
 		}
 	}
 	#mainContent {
-		@include breakpoint($small-screen){
+		
+		.groupContent {
+			//font: 60px fontello, serif;
+			
+			padding-bottom: 10px;
+			background-color: white;
+
+		}
+		@include breakpoint($minor-screen){
 			@include span(12 of 12);
 			padding-top: 5px;
+
 
 			.itemGroup {
 				@include span(12 of 12);
 				margin-top: 10px;
+				padding-top: 10px; 
+				padding-bottom: 10px;
 				background-color: white;
 				border: 1px solid #C4C4C4;
 				-moz-box-shadow: 0 0 3px #888;
 				-webkit-box-shadow: 0 0 5px#888;
+
 
 				/*&:nth-child(3) {
 					@include span(4 of 12 last);
@@ -128,11 +266,12 @@ body {
 					border-bottom: 1px solid $color-border;
 					color: $color-font;
 					font-weight: bold;
+					font-size: 200%;
 				}
 				.itemContent {
 					span {
 						
-						font-size: 60px;
+						//font-size: 60px;
 					}
 					
 				}
@@ -141,7 +280,9 @@ body {
 					color: $color-main;
 					span {
 						@include span(4 of 12);
-						font-size: 30px;
+						
+						//font-size: 30px;
+						
 						&:nth(2) {
 							@include span(4 of 12 last);
 							text-align: right;
@@ -167,6 +308,8 @@ body {
 					#eventDate {
 						@include span(2 of 12);
 						height: 100%;
+						font-size: 300%;
+						padding: 10px;
 						text-align: center;
 						color: $color-second;
 						background-color: $color-main;
@@ -174,19 +317,23 @@ body {
 						border-right: 1px solid $color-second;	
 						span {
 							@include span(2 of 2);
+							font-weight: bold;
 						}
 					}
 					.eventBottomText {
-							font-size: 12px;
+							//font-size: 12px;
+							font-size: 50%;
 					}
 					.eventToppText {
-							font-size: 60px;
+							//font-size: 60px;
 					}
 					#eventTitle {
 						@include span(8 of 12);
 						text-align: center;
 						height: 100%;
+						font-size: 300%;
 						border-bottom: 1px solid $color-main;
+
 						span {
 							@include span(8 of 8);
 						}
@@ -195,6 +342,8 @@ body {
 						@include span(2 of 12 last);
 						height: 100%;
 						text-align: center;
+						font-size: 300%;
+						font-weight: bold;
 						color: $color-second;
 						background-color: $color-main;
 						border-bottom: 1px solid $color-second;	
@@ -208,31 +357,15 @@ body {
 				.eventContent {
 					background-color: white;
 					color: $color-main;
-					font-size: 30px;
+					border-bottom: 1px solid $color-border;
+					//font-size: 30px;
 				}
 			}
 		}
 	}
-	#mainFooter {
-		@include span(12 of 12);
-		height: 100px;
-
-		font-size: 60px;
-
-		color: #BA2282;
-		a {
-			color: #BA2282;
-		}
-		border-top: 1px solid #5C0F40;
-		position: fixed;
-		bottom: 0;
-		background-color: white;
-	}
 }
-.groupContent {
-	font: 60px fontello, serif;
-
-	background-color: white;
+.last {
+	height: 100%;
 }
 
 // Standard tag coding
@@ -243,6 +376,10 @@ a {
 	display: block;
 	cursor: hand;
 	height: 100%;
+	&.toggled {
+		-moz-box-shadow: inset 0 0 10px #000000;
+		-webkit-box-shadow: inset 0 0 10px #000000;	
+	}
 }
 
 .menuNavigator {
@@ -251,7 +388,7 @@ a {
 	border-bottom: 1px solid #5C0F40;
 	position: absolute;
 	background-color: white;
-	width: 300px;
+	
 	display: none;
 	.navHeader {
 		display: block;
@@ -265,10 +402,9 @@ a {
 			text-align: -webkit-match-parent;
 			cursor: hand;
 			border-bottom:  1px solid $color-border;
-			height: 100px;
 			a {
 				color: $color-font;
-				font-size: 60px;
+				font-size: 200%;
 				text-align: left;
 			}
 		}
