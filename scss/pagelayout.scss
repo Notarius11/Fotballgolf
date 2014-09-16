@@ -8,7 +8,7 @@ $susy: (
 
 $small-screen: 700px;
 $minor-screen: 100px;
-$large-screen: 2000px;
+$large-screen: 1000px;
 $color-main: #424242;
 $color-font: #424242;
 $color-border: #787878;
@@ -305,7 +305,7 @@ body {
 				.eventHeader {
 					height: 100px;
 					
-					#eventDate {
+					.eventDate {
 						@include span(2 of 12);
 						height: 100%;
 						font-size: 300%;
@@ -327,7 +327,7 @@ body {
 					.eventToppText {
 							//font-size: 60px;
 					}
-					#eventTitle {
+					.eventTitle {
 						@include span(8 of 12);
 						text-align: center;
 						height: 100%;
@@ -338,7 +338,7 @@ body {
 							@include span(8 of 8);
 						}
 					}
-					#eventPlayers {
+					.eventPlayers {
 						@include span(2 of 12 last);
 						height: 100%;
 						text-align: center;

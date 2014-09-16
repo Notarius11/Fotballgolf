@@ -49,6 +49,7 @@ function navItemClickLarge(pControl) {
 		$('#sectionHeading span').text('Statistikk');
 	} else if ($(pControl).is($('#navItemLargeEvents'))) {
 		$('#events').show();
+		GetEventsData();
 		$('#sectionHeading span').text('Kommende Events');
 	}
 
@@ -76,6 +77,7 @@ function navItemClick(pControl) {
 		$('#sectionHeading span').text('Statistikk');
 	} else if ($(pControl).is($('#navItemEvents'))) {
 		$('#events').show();
+		GetEventsData();
 		$('#sectionHeading span').text('Kommende Events');
 	}
 
@@ -83,6 +85,23 @@ function navItemClick(pControl) {
 	$('#menuButton').addClass('icon-list');
 	$('#menuButton').removeClass('icon-cancel');
 	$('#menuButton').parent().removeClass('enabled');
+}
+function GetEventsData(){
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+    	var res = JSON.parse(xmlhttp.responseText);
+      	AddEvents(res);
+      	//$("#fields").html(res);
+    }
+  }
+  xmlhttp.open("GET","connectDB.php?function=Events",true);
+  xmlhttp.send();
 }
 function GetFieldsData(){
   if (window.XMLHttpRequest) {
@@ -97,6 +116,30 @@ function GetFieldsData(){
       	$("#fields").html(res);
     }
   }
-  xmlhttp.open("GET","connectDB.php",true);
+  xmlhttp.open("GET","connectDB.php?function=Fields",true);
   xmlhttp.send();
+}
+function AddEvents(pEvents) {
+	//Loop through and add events to the DOM
+	for (var i = 0; i < pEvents.length; i++){
+		// $('#upcomingEvents').add('<div id="event_"' + pEvents(i).ID + ' onclick="eventClick(this)"');
+		// var eventHeader = $('<div />').addClass("eventHeader");
+		
+		// var eventDay = $('<span class="eventToppText">' + pEvents(i).Day + '</span>');
+		// var eventMonth = $('<span class="eventBottomText">' + pEvents(i).Month + '</span>');
+		// var eventDate = $('<div id="event_"' + pEvents(i).ID + '_eventDate');
+		// $(eventDate).add($(eventDay));
+		// $(eventDate).add($(eventMonth));
+		
+		// $(eventHeader).add($('<div id="event_"' + pEvents(i).ID + '_eventDate'));
+		var newEvent = $('#eventMal').clone(true);
+		// Change the eventID
+		$(newEvent).attr('id','event_' + pEvents[i].ID.toString());
+		$(newEvent).css('display','block');
+		// Set the eventfields
+		$(newEvent).find("span[field='eventDay']").text(pEvents[i].Day.toString());
+		$(newEvent).find("span[field='eventMonth']").text(pEvents[i].Month.toString());
+		$(newEvent).find("span[field='eventPlayers']").text(pEvents[i].Registered.toString());
+		$('#upcomingEvents').append(newEvent);
+	}
 }

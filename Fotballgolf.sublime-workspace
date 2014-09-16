@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"eventD",
+				"eventDay"
+			],
+			[
+				"ev",
+				"eventHeader"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"Get",
+				"GetFields"
+			],
+			[
+				"E",
+				"EstablishConnection"
+			],
+			[
 				"bord-",
 				"border-right"
 			],
@@ -80,26 +108,34 @@
 	"buffers":
 	[
 		{
-			"file": "susyTest.html",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8594,
+				"buffer_size": 8244,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "scss/susylayout.scss",
+			"file": "javascript/main_homepage.js",
 			"settings":
 			{
-				"buffer_size": 8414,
+				"buffer_size": 5196,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "javascript/main.js",
+			"file": "scss/pagelayout.scss",
 			"settings":
 			{
-				"buffer_size": 1498,
+				"buffer_size": 7915,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "connectDB.php",
+			"settings":
+			{
+				"buffer_size": 1606,
 				"line_ending": "Windows"
 			}
 		}
@@ -140,6 +176,9 @@
 	},
 	"file_history":
 	[
+		"/C/Web Projects/Fotballgolf/javascript/main.js",
+		"/C/Web Projects/Fotballgolf/scss/susylayout.scss",
+		"/C/Web Projects/Fotballgolf/susyTest.html",
 		"/C/Web Projects/Fotballgolf/scss/layout.scss",
 		"/C/Web Projects/Fotballgolf/main.html",
 		"/C/Web Projects/Stavanger Fotballgolf/main.html",
@@ -186,23 +225,23 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "susyTest.html",
+					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 8594,
+						"buffer_size": 8244,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8070,
-								8070
+								1254,
+								1262
 							]
 						],
 						"settings":
@@ -211,52 +250,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2970.0,
+						"translation.y": 1845.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "scss/susylayout.scss",
+					"file": "javascript/main_homepage.js",
 					"settings":
 					{
-						"buffer_size": 8414,
+						"buffer_size": 5196,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								406,
-								424
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "javascript/main.js",
-					"settings":
-					{
-						"buffer_size": 1498,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								177,
-								177
+								5191,
+								5191
 							]
 						],
 						"settings":
@@ -265,7 +277,60 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1543.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "scss/pagelayout.scss",
+					"settings":
+					{
+						"buffer_size": 7915,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7111,
+								7111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4095.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "connectDB.php",
+					"settings":
+					{
+						"buffer_size": 1606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1569,
+								1569
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 471.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

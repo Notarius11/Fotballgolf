@@ -53,7 +53,7 @@ body {
       height: 100%; }
     body #rightSection {
       display: none; } }
-  @media (min-width: 2000px) {
+  @media (min-width: 1000px) {
     body #leftSection {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -164,7 +164,7 @@ body {
         background-color: white; }
         body #mainHeader #mainMenu.enabled a {
           color: #424242; } }
-  @media (min-width: 2000px) {
+  @media (min-width: 1000px) {
     body #mainHeader #logo {
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -192,7 +192,7 @@ body {
   @media (min-width: 100px) {
     body #mainMenuLarge {
       display: none; } }
-  @media (min-width: 2000px) {
+  @media (min-width: 1000px) {
     body #mainMenuLarge {
       display: block;
       background-color: #424242;
@@ -240,7 +240,7 @@ body {
     body #sectionHeading {
       display: block;
       font-size: 200%; } }
-  @media (min-width: 2000px) {
+  @media (min-width: 1000px) {
     body #sectionHeading {
       display: none; } }
   body #mainContent .groupContent {
@@ -312,7 +312,7 @@ body {
           border-right: 1px solid #424242; }
         body #mainContent .itemGroup .eventHeader {
           height: 100px; }
-          body #mainContent .itemGroup .eventHeader #eventDate {
+          body #mainContent .itemGroup .eventHeader .eventDate {
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -328,7 +328,7 @@ body {
             background-color: #424242;
             border-bottom: 1px solid #db7d00;
             border-right: 1px solid #db7d00; }
-            body #mainContent .itemGroup .eventHeader #eventDate span {
+            body #mainContent .itemGroup .eventHeader .eventDate span {
               -moz-box-sizing: border-box;
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -339,7 +339,7 @@ body {
               font-weight: bold; }
           body #mainContent .itemGroup .eventHeader .eventBottomText {
             font-size: 50%; }
-          body #mainContent .itemGroup .eventHeader #eventTitle {
+          body #mainContent .itemGroup .eventHeader .eventTitle {
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -351,7 +351,7 @@ body {
             height: 100%;
             font-size: 300%;
             border-bottom: 1px solid #424242; }
-            body #mainContent .itemGroup .eventHeader #eventTitle span {
+            body #mainContent .itemGroup .eventHeader .eventTitle span {
               -moz-box-sizing: border-box;
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -359,7 +359,7 @@ body {
               float: left;
               padding-left: 1.25%;
               padding-right: 1.25%; }
-          body #mainContent .itemGroup .eventHeader #eventPlayers {
+          body #mainContent .itemGroup .eventHeader .eventPlayers {
             -moz-box-sizing: border-box;
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -375,7 +375,7 @@ body {
             background-color: #424242;
             border-bottom: 1px solid #db7d00;
             border-left: 1px solid #db7d00; }
-            body #mainContent .itemGroup .eventHeader #eventPlayers span {
+            body #mainContent .itemGroup .eventHeader .eventPlayers span {
               -moz-box-sizing: border-box;
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
