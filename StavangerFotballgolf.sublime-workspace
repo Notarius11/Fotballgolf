@@ -159,7 +159,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 7086,
+				"buffer_size": 7100,
 				"line_ending": "Windows"
 			}
 		},
@@ -167,7 +167,7 @@
 			"file": "javascript/main_homepage.js",
 			"settings":
 			{
-				"buffer_size": 3445,
+				"buffer_size": 4963,
 				"line_ending": "Windows"
 			}
 		},
@@ -191,7 +191,7 @@
 			"file": "scss/pagelayout.scss",
 			"settings":
 			{
-				"buffer_size": 7915,
+				"buffer_size": 7465,
 				"line_ending": "Windows"
 			}
 		},
@@ -199,7 +199,7 @@
 			"file": "connectDB.php",
 			"settings":
 			{
-				"buffer_size": 663,
+				"buffer_size": 1606,
 				"line_ending": "Windows"
 			}
 		}
@@ -302,7 +302,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -418,15 +418,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 7086,
+						"buffer_size": 7100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6504,
-								6504
+								1472,
+								1472
 							]
 						],
 						"settings":
@@ -435,7 +435,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2520.0,
+						"translation.y": 288.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -445,15 +445,15 @@
 					"file": "javascript/main_homepage.js",
 					"settings":
 					{
-						"buffer_size": 3445,
+						"buffer_size": 4963,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								787,
-								787
+								4100,
+								4100
 							]
 						],
 						"settings":
@@ -461,7 +461,7 @@
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 144.0,
+						"translation.y": 2448.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -526,15 +526,15 @@
 					"file": "scss/pagelayout.scss",
 					"settings":
 					{
-						"buffer_size": 7915,
+						"buffer_size": 7465,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7041,
-								7041
+								3064,
+								3064
 							]
 						],
 						"settings":
@@ -543,7 +543,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 7560.0,
+						"translation.y": 3816.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -553,23 +553,24 @@
 					"file": "connectDB.php",
 					"settings":
 					{
-						"buffer_size": 663,
+						"buffer_size": 1606,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								637,
-								303
+								1438,
+								1443
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 504.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

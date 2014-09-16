@@ -83,112 +83,79 @@ body {
       float: left;
       display: block; } }
   @media (min-width: 100px) {
-    body #mainHeader #logo {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 16.66667%;
-      float: right;
-      background-color: #424242;
-      border-bottom: #787878;
-      color: white;
-      padding-bottom: 10px;
+    body #mainHeader {
       font-size: 220%; }
-    body #mainHeader #club-name {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 66.66667%;
-      float: left;
-      text-align: center;
-      background-color: #424242;
-      border-bottom: #787878;
-      color: white;
-      padding-bottom: 10px;
-      font-size: 220%; }
-    body #mainHeader #mainMenu {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 16.66667%;
-      float: left;
-      text-align: center;
-      display: block;
-      background-color: #424242;
-      border-bottom: #787878;
-      color: white;
-      padding-bottom: 10px;
-      font-size: 220%; }
-      body #mainHeader #mainMenu.enabled {
-        background-color: white; }
-        body #mainHeader #mainMenu.enabled a {
-          color: #424242; } }
+      body #mainHeader #logo {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 16.66667%;
+        float: right;
+        background-color: #424242;
+        border-bottom: #787878;
+        color: white;
+        padding-bottom: 10px; }
+      body #mainHeader #club-name {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 66.66667%;
+        float: left;
+        text-align: center;
+        background-color: #424242;
+        border-bottom: #787878;
+        color: white;
+        padding-bottom: 10px; }
+      body #mainHeader #mainMenu {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 16.66667%;
+        float: left;
+        text-align: center;
+        display: block;
+        background-color: #424242;
+        border-bottom: #787878;
+        color: white;
+        padding-bottom: 10px; }
+        body #mainHeader #mainMenu.enabled {
+          background-color: white; }
+          body #mainHeader #mainMenu.enabled a {
+            color: #424242; } }
   @media (min-width: 700px) {
-    body #mainHeader #logo {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 16.66667%;
-      float: right;
-      background-color: #424242;
-      border-bottom: #787878;
-      color: white;
-      padding-bottom: 10px;
-      font-size: 320%; }
-    body #mainHeader #club-name {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 66.66667%;
-      float: left;
-      text-align: center;
-      background-color: #424242;
-      border-bottom: #787878;
-      color: white;
-      padding-bottom: 10px;
-      font-size: 320%; }
-    body #mainHeader #mainMenu {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 16.66667%;
-      float: left;
-      text-align: center;
-      display: block;
-      background-color: #424242;
-      border-bottom: #787878;
-      color: white;
-      padding-bottom: 10px;
-      font-size: 320%; }
-      body #mainHeader #mainMenu.enabled {
-        background-color: white; }
-        body #mainHeader #mainMenu.enabled a {
-          color: #424242; } }
+    body #mainHeader {
+      font-size: 320%; } }
   @media (min-width: 1000px) {
-    body #mainHeader #logo {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 16.66667%;
-      float: right;
-      padding-left: 0.83333%;
-      padding-right: 0.83333%;
-      color: white;
-      padding-top: 10px;
-      font-size: 420%; }
-    body #mainHeader #club-name {
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      width: 83.33333%;
-      float: left;
-      padding-left: 0.83333%;
-      padding-right: 0.83333%;
-      padding-top: 10px;
-      text-align: center;
-      font-size: 420%; }
-    body #mainHeader #mainMenu {
-      display: none; } }
+    body #mainHeader {
+      font-size: 200%; }
+      body #mainHeader #logo {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 16.66667%;
+        float: right;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%;
+        color: white;
+        padding-top: 10px; }
+      body #mainHeader #club-name {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 83.33333%;
+        float: left;
+        padding-left: 0.83333%;
+        padding-right: 0.83333%;
+        padding-top: 10px;
+        text-align: center; }
+      body #mainHeader #mainMenu {
+        display: none; } }
+  @media (min-width: 1500px) {
+    body #mainHeader {
+      font-size: 300%; } }
+  @media (min-width: 1800px) {
+    body #mainHeader {
+      font-size: 420%; } }
   @media (min-width: 100px) {
     body #mainMenuLarge {
       display: none; } }
@@ -212,15 +179,21 @@ body {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        width: 16.66667%;
+        width: 20%;
         float: left;
-        padding-left: 1.66667%;
-        padding-right: 1.66667%; }
+        padding-left: 2%;
+        padding-right: 2%; }
         body #mainMenuLarge div a {
-          font-size: 150%; }
+          font-size: 100%; }
           body #mainMenuLarge div a:hover {
             -moz-box-shadow: inset 0 0 10px #000000;
             -webkit-box-shadow: inset 0 0 10px #000000; } }
+  @media (min-width: 1500px) {
+    body #mainMenuLarge div a {
+      font-size: 120%; } }
+  @media (min-width: 1800px) {
+    body #mainMenuLarge div a {
+      font-size: 150%; } }
   @media (min-width: 100px) {
     body #sectionHeading {
       -moz-box-sizing: border-box;

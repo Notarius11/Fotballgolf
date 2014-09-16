@@ -1,3 +1,6 @@
+var listOfEvents = null;
+var listOfFields = null;
+
 function onLoad() {
 	/* Get the latest news */
 
@@ -42,14 +45,18 @@ function navItemClickLarge(pControl) {
 		$('#sectionHeading span').text('Kontakt oss');
 	} else if($(pControl).is($('#navItemLargeFields'))) {
 		$('#fields').show();
-		GetFieldsData();
+		if (listOfFields === null){
+			GetFieldsData();	
+		}
 		$('#sectionHeading span').text('Baner');
 	} else if ($(pControl).is($('#navItemLargeStatistics'))) {
 		$('#statistics').show();
 		$('#sectionHeading span').text('Statistikk');
 	} else if ($(pControl).is($('#navItemLargeEvents'))) {
 		$('#events').show();
-		GetEventsData();
+		if (listOfEvents === null) {
+			GetEventsData();	
+		}
 		$('#sectionHeading span').text('Kommende Events');
 	}
 
@@ -70,14 +77,18 @@ function navItemClick(pControl) {
 		$('#sectionHeading span').text('Kontakt oss');
 	} else if($(pControl).is($('#navItemFields'))) {
 		$('#fields').show();
-		GetFieldsData();
+		if (listOfFields === null){
+			GetFieldsData();	
+		}
 		$('#sectionHeading span').text('Baner');
 	} else if ($(pControl).is($('#navItemStatistics'))) {
 		$('#statistics').show();
 		$('#sectionHeading span').text('Statistikk');
 	} else if ($(pControl).is($('#navItemEvents'))) {
 		$('#events').show();
-		GetEventsData();
+		if (listOfEvents === null) {
+			GetEventsData();	
+		}
 		$('#sectionHeading span').text('Kommende Events');
 	}
 
@@ -121,22 +132,17 @@ function GetFieldsData(){
 }
 function AddEvents(pEvents) {
 	//Loop through and add events to the DOM
+	if (pEvents.length > 0){
+		listOfEvents = pEvents;
+	}
 	for (var i = 0; i < pEvents.length; i++){
-		// $('#upcomingEvents').add('<div id="event_"' + pEvents(i).ID + ' onclick="eventClick(this)"');
-		// var eventHeader = $('<div />').addClass("eventHeader");
-		
-		// var eventDay = $('<span class="eventToppText">' + pEvents(i).Day + '</span>');
-		// var eventMonth = $('<span class="eventBottomText">' + pEvents(i).Month + '</span>');
-		// var eventDate = $('<div id="event_"' + pEvents(i).ID + '_eventDate');
-		// $(eventDate).add($(eventDay));
-		// $(eventDate).add($(eventMonth));
-		
-		// $(eventHeader).add($('<div id="event_"' + pEvents(i).ID + '_eventDate'));
+
 		var newEvent = $('#eventMal').clone(true);
 		// Change the eventID
 		$(newEvent).attr('id','event_' + pEvents[i].ID.toString());
 		$(newEvent).css('display','block');
 		// Set the eventfields
+		$(newEvent).find("span[field='eventTitle']").text(pEvents[i].Title.toString());
 		$(newEvent).find("span[field='eventDay']").text(pEvents[i].Day.toString());
 		$(newEvent).find("span[field='eventMonth']").text(pEvents[i].Month.toString());
 		$(newEvent).find("span[field='eventPlayers']").text(pEvents[i].Registered.toString());
