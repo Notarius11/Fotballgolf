@@ -166,7 +166,8 @@ body {
       padding-bottom: 10px;
       padding-top: 10px;
       -moz-box-shadow: 0 0 3px #888;
-      -webkit-box-shadow: 0 0 5px #888888;
+      -webkit-box-shadow: 0 0 5px #888;
+      box-shadow: 0 0 3px #888;
       border-bottom: 1px solid #787878;
       -moz-box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -243,7 +244,8 @@ body {
         background-color: white;
         border: 1px solid #C4C4C4;
         -moz-box-shadow: 0 0 3px #888;
-        -webkit-box-shadow: 0 0 5px #888888;
+        -webkit-box-shadow: 0 0 3px #888;
+        box-shadow: 0 0 3px #888;
         /*&:nth-child(3) {
         	@include span(4 of 12 last);
         } */ }
@@ -373,7 +375,8 @@ a {
   height: 100%; }
   a.toggled {
     -moz-box-shadow: inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000; }
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000; }
 
 .menuNavigator {
   border-left: 1px solid #5C0F40;
