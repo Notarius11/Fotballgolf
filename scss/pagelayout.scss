@@ -17,8 +17,7 @@ $color-border: #787878;
 $color-second: #DB7D00;
 
 $font-size: 16px;
-
-
+$font: normal normal $font-size fontello serif;
 .page { 
 	@include container;
 	height: 100%;
@@ -343,6 +342,7 @@ body {
 					background-color: white;
 					color: $color-main;
 					border-bottom: 1px solid $color-border;
+					@include span(12 of 12 last);
 					//font-size: 30px;
 				}
 			}
@@ -366,6 +366,21 @@ a {
 		-webkit-box-shadow: inset 0 0 10px #000000;
 		box-shadow: inset 0 0 10px #000000;
 	}
+}
+// Standard textbox coding
+.ui-lbl {
+	width: 100%;
+	font: $font;
+	margin-top: 5px;
+}
+.ui-txt {
+	width: 100%;
+	border: 1px solid $color-border;
+	border-radius: 5px;
+	box-shadow: inset 0 0 3px #888;
+	height: 30px;
+	font: $font;
+	margin-bottom: 5px;
 }
 
 .menuNavigator {

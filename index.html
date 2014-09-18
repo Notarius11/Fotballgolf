@@ -38,20 +38,25 @@
 					</ul>	
 				</div>
 			</div>
-			<div class="eventSubWrapper" id="eventMal" onclick="eventClick(this)" style="display: none;">
-				<div class="eventHeader">
+			<div class="eventSubWrapper" id="eventMal" style="display: none;">
+				<div class="eventHeader"  onclick="eventClick(this)">
+					<div style="display: none;" field="eventID"></div>
 					<div class="eventDate"><span class="eventToppText" field="eventDay"></span><span class="eventBottomText" field="eventMonth"></span></div>
 					<div class="eventTitle"><span class="eventToppText" field="eventTitle"></span><span class="eventBottomText">Klikk for &#229; registrere deg</span></div>
 					<div class="eventPlayers"><span class="eventToppText" field="eventPlayers"></span><span class="eventBottomText">Registered</span></div>
 				</div>
 				<div class="eventContent" style="display:none;">
-					<label>Navn:</label>
-					<input type="text" data-field="Name" value=""></input>
-					<label>Email:</label>
-					<input type="text" data-field="Email" value=""></input>
-					<label>Bli medlem:</label>
-					<input type="checkbox" data-field="Member" value=""></input>
-					<input type="button" ></input>
+					<label class="ui-lbl">First name:</label><br>
+					<input class="ui-txt" type="text" data-field="FirstName" autocomplete="on" value=""></input><br>
+					<label class="ui-lbl">Last name:</label><br>
+					<input class="ui-txt" type="text" data-field="LastName" autocomplete="on" value=""></input><br>
+					<label class="ui-lbl">Birthday:</label><br>
+					<input type="datetime" data-field="Name" name="bdaytime"></input><br>
+					<label class="ui-lbl">Email:</label><br>
+					<input class="ui-txt" type="email" name="email" data-field="Email" autocomplete="on"></input><br>
+					<label class="ui-lbl">Become member:</label><br>
+					<input type="checkbox" data-field="Member" checked="false"></input><br>
+					<input class="ui-btn" type="submit" onclick="saveRegistration(this)" ></input>
 				</div>
 			</div>
 			<div id="mainHeader">

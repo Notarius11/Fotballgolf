@@ -21,11 +21,11 @@ function menuClick(pControl){
 	}
 }
 function eventClick(pControl){
-	if ($(pControl).find('.eventContent').is(':visible')) {
-		$(pControl).find('.eventContent').hide();
+	if ($(pControl).parent().find('.eventContent').is(':visible')) {
+		$(pControl).parent().find('.eventContent').hide();
 	}
 	else {
-		$(pControl).find('.eventContent').show();	
+		$(pControl).parent().find('.eventContent').show();	
 	}
 }
 
@@ -142,10 +142,35 @@ function AddEvents(pEvents) {
 		$(newEvent).attr('id','event_' + pEvents[i].ID.toString());
 		$(newEvent).css('display','block');
 		// Set the eventfields
+		$(newEvent).find("div[field='eventID']").text(pEvents[i].ID.toString());
 		$(newEvent).find("span[field='eventTitle']").text(pEvents[i].Title.toString());
 		$(newEvent).find("span[field='eventDay']").text(pEvents[i].Day.toString());
 		$(newEvent).find("span[field='eventMonth']").text(pEvents[i].Month.toString());
 		$(newEvent).find("span[field='eventPlayers']").text(pEvents[i].Registered.toString());
 		$('#upcomingEvents').append(newEvent);
+	}
+}
+
+function saveRegistration(pRegistration) {
+	// Get the Fields to register
+	var eventID = $(pRegistration).parent().parent().find("div[field='eventID']").text();
+	var personFirstName = $(pRegistration).parent().find("input[data-field]='FirstName'").text();
+	var personLastName = $(pRegistration).parent().find("input[data-field]='LastName'").text();
+	var personEmail = $(pRegistration).parent().find("input[data-field]='Email'").text();
+	var personMember = $(pRegistration).parent().find("input[data-field]='Member'").val();
+
+	if (window.XMLHttpRequest) {
+	    // code for IE7+, Firefox, Chrome, Opera, Safari
+	    xmlhttp=new XMLHttpRequest();
+	  } else { // code for IE6, IE5
+	    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	  xmlhttp.onreadystatechange=function() {
+	    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	    	var res = xmlhttp.responseText;
+	    }
+	  }
+	  xmlhttp.open("POST","connectDB.php?function=SaveReg&EventID=" + eventID + "&FirstName=" + personFirstName + "&LastName=" + personLastName + "&Email=" + personEmail + "&Member=" + personMember,true);
+	  xmlhttp.send();
 	}
 }

@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"person",
+				"personMember"
+			],
+			[
+				"even",
+				"eventID"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"color",
+				"color-border"
+			],
+			[
 				"eventD",
 				"eventDay"
 			],
@@ -50,10 +66,6 @@
 			[
 				"course",
 				"courseCard"
-			],
-			[
-				"color",
-				"color-border-standard"
 			],
 			[
 				"sh",
@@ -111,7 +123,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 8244,
+				"buffer_size": 7451,
 				"line_ending": "Windows"
 			}
 		},
@@ -119,7 +131,7 @@
 			"file": "javascript/main_homepage.js",
 			"settings":
 			{
-				"buffer_size": 5196,
+				"buffer_size": 6177,
 				"line_ending": "Windows"
 			}
 		},
@@ -127,7 +139,7 @@
 			"file": "scss/pagelayout.scss",
 			"settings":
 			{
-				"buffer_size": 7915,
+				"buffer_size": 7892,
 				"line_ending": "Windows"
 			}
 		},
@@ -135,7 +147,7 @@
 			"file": "connectDB.php",
 			"settings":
 			{
-				"buffer_size": 1606,
+				"buffer_size": 2034,
 				"line_ending": "Windows"
 			}
 		}
@@ -225,7 +237,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -233,15 +245,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 8244,
+						"buffer_size": 7451,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1254,
-								1262
+								2736,
+								2736
 							]
 						],
 						"settings":
@@ -250,7 +262,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1845.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -260,15 +272,15 @@
 					"file": "javascript/main_homepage.js",
 					"settings":
 					{
-						"buffer_size": 5196,
+						"buffer_size": 6177,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5191,
-								5191
+								5939,
+								5939
 							]
 						],
 						"settings":
@@ -277,7 +289,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1543.0,
+						"translation.y": 1980.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -287,15 +299,15 @@
 					"file": "scss/pagelayout.scss",
 					"settings":
 					{
-						"buffer_size": 7915,
+						"buffer_size": 7892,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7111,
-								7111
+								6921,
+								6921
 							]
 						],
 						"settings":
@@ -304,7 +316,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4095.0,
+						"translation.y": 5130.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -314,23 +326,24 @@
 					"file": "connectDB.php",
 					"settings":
 					{
-						"buffer_size": 1606,
+						"buffer_size": 2034,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1569,
-								1569
+								1722,
+								1722
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 471.0,
+						"translation.y": 720.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

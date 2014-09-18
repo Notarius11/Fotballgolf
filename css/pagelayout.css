@@ -361,7 +361,14 @@ body {
         body #mainContent .itemGroup .eventContent {
           background-color: white;
           color: #424242;
-          border-bottom: 1px solid #787878; } }
+          border-bottom: 1px solid #787878;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+          width: 100%;
+          float: right;
+          padding-left: 0.83333%;
+          padding-right: 0.83333%; } }
 
 .last {
   height: 100%; }
@@ -377,6 +384,20 @@ a {
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: inset 0 0 10px #000000; }
+
+.ui-lbl {
+  width: 100%;
+  font: normal normal 16px fontello serif;
+  margin-top: 5px; }
+
+.ui-txt {
+  width: 100%;
+  border: 1px solid #787878;
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px #888;
+  height: 30px;
+  font: normal normal 16px fontello serif;
+  margin-bottom: 5px; }
 
 .menuNavigator {
   border-left: 1px solid #5C0F40;

@@ -1,7 +1,14 @@
 <?php
-
+$function
 // Get the function parameter
-$function = $_GET["function"];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	$function = $_POST["function"];
+}
+else {
+	$function = $_GET["function"];
+}
+
+
 $con = null;
 if ($function === null) { 
 	echo "<span id='error'>Error: Failed to specify function to run!</span>";
@@ -11,6 +18,8 @@ if ($function === null) {
 		GetFields();
 	} elseif ($function === 'Events') {
 		GetEvents();
+	} elseif ($function === 'SaveReg') {
+		SaveReg();
 	}
 	mysqli_close($con);
 }
@@ -59,6 +68,23 @@ function GetEvents() {
 	}
 
 	echo json_encode($response);
+}
+
+function SaveReg() {
+	global $con;
+	$sql="INSERT INTO Persons";
+	$result = mysqli_query($con,$sql);
+
+
+
+	$affectedrows = mysqli_affected_rows($result);
+
+	if ($affectedrows = 1){
+		echo "Success: You are now signed up!"
+	} else {
+		echo "Error:" + mysqli_error($result);
+	}
+
 }
 
 ?>
