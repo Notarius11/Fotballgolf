@@ -18,6 +18,7 @@ $color-second: #DB7D00;
 
 $font-size: 16px;
 $font: normal normal $font-size fontello serif;
+
 .page { 
 	@include container;
 	height: 100%;
@@ -34,7 +35,26 @@ h3 {
 	color: $color-font;
 }
 
+img {
+	// This code is due to IE's standard width
+	width: 100%;
+}
+
 body {
+	.ui-btn {
+		width: 100%;
+		text-align: center;
+		padding: none;
+		text-decoration: none;
+		font-weight: bold;
+		background-color: $color-main;
+		border: $color-border;
+		height: 4em;
+		color: white;
+		&:hover {
+			background-color: #33BCF2;
+		}
+	}
 	
 	@include span (12 of 12 no-gutters) {
 		@include breakpoint($small-screen){
@@ -94,42 +114,27 @@ body {
 
 
 	#mainHeader {
-		
+		display: block;
+		background-color: white;
+		text-align: center;
+		@include span(12 of 12);
+
+		#club-name {
+			color: $color-main;
+		}
 		@include breakpoint($minor-screen){
 			font-size: 220%;
-			#logo {
-				@include span(2 of 12 last no-gutters);
-				//height: 150px;
-				background-color: $color-main;
-				border-bottom: $color-border;
-				color: white;
-				padding-bottom: 10px;
-				
-			}	
-			#club-name {
-				@include span(8 of 12 no-gutters);
-				text-align: center;
-				background-color: $color-main;
-				border-bottom: $color-border;
-				color: white;
-				padding-bottom: 10px;
+			#menuButton {
+				@include span(2 of 12);
+				padding-top: 5px;
+				height: 100%;
+				color: $color-main;
 			}
-			#mainMenu {
-				@include span(2 of 12 no-gutters);
-				text-align: center;
-				display: block;
-				background-color: $color-main;
-				border-bottom: $color-border;
-				color: white;
-				padding-bottom: 10px;
-				
-				&.enabled {
-					background-color:white;
-					
-					a {
-						color: $color-font;
-					}
-				}
+			#club-name {
+				@include span(8 of 12);
+			}
+			div {
+				@include span(2 of 12 last);
 			}
 		}
 		@include breakpoint($small-screen){
@@ -137,25 +142,19 @@ body {
 		}
 		@include breakpoint($large-screen){
 			font-size: 200%;
-			#logo {
-				@include span(2 of 12 last);
-				color: white;
-				padding-top: 10px;
-			}	
+
+			#menuButton {
+				display: none;
+			}
 			#club-name {
 				@include span(10 of 12);
-				padding-top: 10px;
-				text-align: center;
-			}
-			#mainMenu {
-				display: none;
 			}
 		}
 		@include breakpoint($largepluss-screen){
 			font-size: 300%;
 		}
 		@include breakpoint($major-screen){
-			font-size: 420%;
+			font-size: 420%;	
 		}
 	}
 	#mainMenuLarge {
@@ -173,7 +172,7 @@ body {
 			border-bottom: 1px solid $color-border;
 			@include span(6 of 6){
 				div {
-					@include span(1 of 5) {
+					@include span(1 of 6) {
 						a {
 							font-size: 100%;
 							&:hover {
@@ -219,12 +218,14 @@ body {
 		}
 	}
 	#mainContent {
+
+
 		
 		.groupContent {
 			//font: 60px fontello, serif;
 			
 			padding-bottom: 10px;
-			background-color: white;
+
 
 		}
 		@include breakpoint($minor-screen){
@@ -293,7 +294,6 @@ body {
 						@include span(2 of 12);
 						height: 100%;
 						font-size: 300%;
-						padding: 10px;
 						text-align: center;
 						color: $color-second;
 						background-color: $color-main;
@@ -345,6 +345,10 @@ body {
 					@include span(12 of 12 last);
 					//font-size: 30px;
 				}
+				.eventFooter {
+					@include span(12 of 12);
+					font-size: 100%;
+				}
 			}
 		}
 	}
@@ -367,21 +371,48 @@ a {
 		box-shadow: inset 0 0 10px #000000;
 	}
 }
+.toolTipContent {
+	background-color: $color-main;
+	color: white;
+	border-radius: 5px;
+	height:auto;
+	font-size: 70%;
+}
+
+.toolTipWrapper {
+	width: 200px;
+	position: absolute;
+}
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	margin-left: 95px;
+	margin-right: 95px;
+	border-top: 10px solid $color-main;
+}
+
+.errorBox {
+	background-color: #FF9696;
+	border-color: #FF4545;
+}
+
 // Standard textbox coding
+.ui-txt {
+		width: 100%;
+		border: 1px solid $color-border;
+		box-shadow: inset 0 0 3px #888;
+		height: 30px;
+		font: $font;
+		margin-bottom: 5px;
+}	
 .ui-lbl {
-	width: 100%;
 	font: $font;
 	margin-top: 5px;
 }
-.ui-txt {
-	width: 100%;
-	border: 1px solid $color-border;
-	border-radius: 5px;
-	box-shadow: inset 0 0 3px #888;
-	height: 30px;
-	font: $font;
-	margin-bottom: 5px;
-}
+
 
 .menuNavigator {
 	border-left: 1px solid #5C0F40;

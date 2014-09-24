@@ -1,17 +1,17 @@
 <!DOCTYPE HTML>
 <html class="page">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 
 		<link rel="stylesheet" href="css/pagelayout.css" />
 		<link rel="stylesheet" href="css/fontello.css" />
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
 		<script src="javascript/main_homepage.js"></script>
 	</head>
 	<body>
-		<div id="leftSection">&nbsp;
-		</div>
+		<div id="leftSection">&nbsp;</div>
 		<div id="mainSection">
 			<div id="menuNavigator">
 				<div class="menuNavigator">
@@ -29,15 +29,25 @@
 							<a id="navItemFields" href="#" onclick="navItemClick(this)">Baner</a>
 						</li>
 						<li class="navItem">
-							<a id="navItemKontakt" href="#" onclick="navItemClick(this)">Kontakt Oss</a>
+							<a id="navItemMembership" href="#" onclick="navItemClick(this)">Medlemskap</a>
 						</li>
 						<li class="navItem">
+							<a id="navItemKontakt" href="#" onclick="navItemClick(this)">Kontakt Oss</a>
+						</li>
+						<li class="navItem" style="display:none;">
 							<a id="navItemLogin" href="#" onclick="navItemClick(this)">App Login</a>
 						</li>
 
 					</ul>	
 				</div>
 			</div>
+			<div id="toolTip" name="toolTipWrapper" class="toolTipWrapper" style="display: none;"><div class="toolTipContent">Text</div><div class="arrow-down"></div></div>
+			<div id="fieldMal" class="itemGroup" style="display: none">
+	  			<div class="itemHeader" field="fieldTitle"></div>
+	  			<div class="itemContent" field="fieldDescription"></div>
+	  			<div><img field="fieldImg" src="" style="height: 400px;"></div>
+	  			<div class="itemFooter"><span field="fieldNumHoles"></span><span field="fieldPar"></span><span field="fieldRecord"></span></div>
+	  		</div>
 			<div class="eventSubWrapper" id="eventMal" style="display: none;">
 				<div class="eventHeader"  onclick="eventClick(this)">
 					<div style="display: none;" field="eventID"></div>
@@ -46,45 +56,75 @@
 					<div class="eventPlayers"><span class="eventToppText" field="eventPlayers"></span><span class="eventBottomText">Registered</span></div>
 				</div>
 				<div class="eventContent" style="display:none;">
-					<label class="ui-lbl">First name:</label><br>
-					<input class="ui-txt" type="text" data-field="FirstName" autocomplete="on" value=""></input><br>
-					<label class="ui-lbl">Last name:</label><br>
-					<input class="ui-txt" type="text" data-field="LastName" autocomplete="on" value=""></input><br>
-					<label class="ui-lbl">Birthday:</label><br>
-					<input type="datetime" data-field="Name" name="bdaytime"></input><br>
-					<label class="ui-lbl">Email:</label><br>
-					<input class="ui-txt" type="email" name="email" data-field="Email" autocomplete="on"></input><br>
-					<label class="ui-lbl">Become member:</label><br>
-					<input type="checkbox" data-field="Member" checked="false"></input><br>
-					<input class="ui-btn" type="submit" onclick="saveRegistration(this)" ></input>
+					<span field="eventDescription"></span>
+					<label class="ui-lbl">First name:</label><input class="ui-txt" type="text" data-field="FirstName" placeholder="Firstname" autocomplete="on" value="" required ></input><br>
+					<label class="ui-lbl">Last name:</label><input class="ui-txt" type="text" data-field="LastName" placeholder="Lastname" autocomplete="on" value="" required></input><br>
+					<label class="ui-lbl">Birthday:</label><input type="date" data-field="BirthDay" name="bdaytime" required></input><br>
+					<label class="ui-lbl">Telefon:</label><input class="ui-txt" type="number" placeholder="[1-9][1-9][1-9][1-9][1-9][1-9][1-9][1-9]" data-field="Telephone" name="telephone" min="10000000" max="99999999" required></input><br>
+					<label class="ui-lbl">Email:</label><input class="ui-txt" type="email" placeholder="example@domain.no" name="email" data-field="Email" autocomplete="on" required></input><br>
+					<label class="ui-lbl">Become member:</label><input type="radio" name="member" value="1" checked>Yes</input><input type="radio" name="member" value="0">No</input><span> * Medlemskap er gratis. Ikke medlemmer betaler 50 kroner for denne eventen, medlemmer deltar gratis</span><br><br>
+					<input class="ui-btn" type="button" onclick="saveRegistration(this)" value="Register for event"></input><br><br>
 				</div>
+				<div class="eventFooter"></div>
 			</div>
 			<div id="mainHeader">
-				<div id="mainMenu">
-					<a id="menuButton" class="icon-list" href="#" onclick="menuClick(this);"></a>
-				</div>
-				<div id="club-name">Stavanger Fotballgolf</div>
-				<div id="logo">Logo</div>
+				<a id="menuButton" class="icon-list" href="#" onclick="menuClick(this);"></a><a id="club-name" href="#" onclick="homeClick();">Stavanger Fotballgolf</a><div id="logo"><img src="images/Logo2.svg" style="width: 100%; height:100px;" /></div>
 			</div>
 			<div id="mainMenuLarge">
 				<div><a id="navItemLargeAboutUs" href="#" onclick="navItemClickLarge(this)">Om oss</a></div>
 				<div><a id="navItemLargeEvents" href="#" onclick="navItemClickLarge(this)">Events</a></div>
 				<div><a id="navItemLargeStatistics" href="#" onclick="navItemClickLarge(this)">Statistikk</a></div>
 				<div><a id="navItemLargeFields" href="#" onclick="navItemClickLarge(this)">Baner</a></div>
+				<div><a id="navItemLargeMembership" href="#" onclick="navItemClickLarge(this)">Medlemskap</a></div>
 				<div><a id="navItemLargeKontakt" href="#" onclick="navItemClickLarge(this)">Kontakt Oss</a></div>
 			</div>
 			<div id="sectionHeading">
 				<span>Om oss</span>
 			</div>
 			<div id="mainContent">
-				<div id="aboutUs" class="groupContent">
+				<div id="home" class="groupContent">
+					<div class="itemGroup">
+						<div class="itemHeader">Stavanger Open</div>
+						<div class="itemContent">Vi i Stavanger Fotballgolf har gleden av &#229; invitere til Stavanger Open <b>11 Oktober</b>! Du kan melde deg p&#229; ved &#229; g&#229; inn p&#229; events via menyen.<br><br>
+							<b>Viktig info:</b><br>
+							<ul>
+								<li>Arrangementet er gratis for medlemmer, og koster 50 kroner for ikke medlemmer (&#229; delta)</li>
+								<li>Medlemskap i Stavanger Fotballgolf er gratis og du kan velge &#229; bli medlem ved p&#229;melding til event</li>
+								<li>Ta med egen ball. Vi har noen baller som kan l&#229;nes, men det er begrenset antall</li>
+								<li>Kan delta b&#229;de i lagkonkurranse og individuelt samtidig!</li>
+								<li>Alle deltakere er med i trekningen av en signert Viking og Sandnes Ulf drakt.</li>
+								<li>Eventen arrangeres p&#229; Madla Idrettspark</li>
+								<li>Oppm&#248;te senest <b>10:00 ved Madla IL klubbhus</b></li>
+								<li>Det vil bli servert gratis mat, kaffe og mineralvann</li>
+								<li>Mulig &#229; benytte dusj og garderobe fasiliteter</li>
+								<li>Anbefalt skotype er gresssko eller kunstgress</li>
+							</ul><br><br>
+							<b>Regler:</b>
+							M&#229;let med fotballgolf er &#229; sparke ballen fra utslagstedet til "hullet" p&#229; færrest mulig touch. <br>
+							<ul>
+								<li>Ballen må alltid ligge i ro før neste spark kan utføres</li>
+								<li>Uspillbar ball: +1 spark, drop innen 2 meters radius fra uspillbar beligenhet</li>
+								<li>Spark på feil ball: +1 spark</li>
+								<li>Du skal alltid flytte deg dersom en ball kan treffe deg</li>
+								<li>Du kan alltid be motstander om &#229; flytte sin ball f&#248;r du utf&#248;rer et spark</li>
+								<li>Max spark: Hullets par + 5 spark</li>
+								<li>Dersom ballen din treffer en annen ball har det ingen konsekvens. Begge ballene spilles fra der de ligger etter sammenst&#248;tet</li>
+								<li>Dersom en ball treffer en motspiller har det ingen konsekvens. Ballen spilles fra der ballen ligger etter sammenst&#248;tet</li>
+								<li><b>Bevisst</b> treff av motstander / lagspiller ball: +1 spark</li>
+							</ul>
+						</div>
+					</div>
+					<div class="itemGroup">
+						<div class="itemContent">
+							<img src="images/press/pic0.jpg" style="width:100%; height:600px;">
+						</div>
+					</div>
+				</div>
+				<div id="aboutUs" class="groupContent" style="display: none;">
 					<div class="itemGroup">
 						<div class="itemHeader">Historie</div>
 						<div class="itemContent">
-							<span>Stavanger Fotballgolf ble etablert den 23.07.2014. Klubben best&#229;r av spillere i alle aldre og begge kj&#248;nn og er i stadig vekst. 
-								Organisasjonen best&#229;r av en styreleder, nestleder, fire styremedlemmer og to varamedlemmer. Det er etablert baner p&#229; Gosen, Madla og 
-								Vaulen. Det er ogs&#229; planer om &#229; f&#229; i stand en ny bane p&#229; Hinna i n&#230;rmeste fremtid. Stavanger Fotballgolf har ogs&#229; intensjoner om &#229; f&#229; til 
-								et samarbeid med en eller flere av de respektive golfklubbene i distriktet.
+							<span>Stavanger Fotballgolf ble etablert 23.07.2014. Klubben best&#229;r av spillere i alle aldre, begge kj&#248;nn og er i stadig vekst. Organisasjonen er satt sammen av en styreleder, nestleder, fire styremedlemmer og to varamedlemmer. Det er etablert baner på Gosen, Madla og Vaulen.
 							</span>
 						</div>
 					</div>
@@ -92,10 +132,9 @@
 						<div class="itemHeader">Visjon</div>
 						<div class="itemContent">
 							<span>
-								Stavanger Fotballgolf har et m&#229;l om &#229; synliggj&#248;re en ny sport i Stavangeromr&#229;det. Vi vil utnytte det store potensialet sporten 
-								har. Fotballgolf skal v&#230;re et selvskrevent alternativ for alle som &#248;nsker aktivitet, uansett alder og kj&#248;nn. Vi &#248;nsker &#229; bidra til &#248;kt 
-								aktivitetsniv&#229;et i samfunnet samt tilby en sportsaktivitet som byr p&#229; idrettsglede og en mulighet for alle til &#229; delta. Dette skal ogs&#229; v&#230;re et 
-								lavterskeltilbud til de som ikke driver aktivt med sport.
+								Stavanger Fotballgolf har et m&#229;l om &#229; synliggj&#248;re en ny sport i Stavangeromr&#229;det. Vi vil utnytte det store potensialet sporten har. Fotballgolf skal v&#230;re et selvskrevent alternativ for alle som &#248;nsker aktivitet, uansett alder og kj&#248;nn.<br><br>
+								Vi &#248;nsker &#229; bidra til &#248;kt aktivitetsniv&#229;et i samfunnet samt tilby en sportsaktivitet som byr p&#229; idrettsglede og en mulighet for alle til &#229; delta. Dette skal ogs&#229; v&#230;re et lavterskeltilbud til de som ikke driver aktivt med sport.<br><br>
+								Stavanger Fotballgolf har en langsiktig plan om &#229; etablere et samarbeid med de lokale golfklubbene for &#229; f&#229; bruke deres baner til fotballgolf. Dr&#248;mmen er en egen fotballgolfbane uavhengig av golfklubber.
 							</span>
 						</div>
 					</div>
@@ -105,9 +144,42 @@
 				<div id="contact" class="groupContent" style="display:none;">
 					<div class="itemGroup">
 						<div class="itemContent">
-							<span>Hvis du &#248;nsker &#229; kj&#248;pe godkjente golfhull, bestille events, teambuilding eller har andre sp&#248;sm&#229;l s&#229; er det bare &#229; ta kontakt!</span><br><br>
-							<span style="float:left;">Mail: <a href="mailto:admin@stavangerfotballgolf.no" style="color: blue;">admin@stavangerfotballgolf.no</a></span><br>
+							<span>Hvis du &#248;nsker &#229; kj&#248;pe godkjente golfhull, bestille events, teambuilding eller har andre sp&#248;rsm&#229;l s&#229; er det bare &#229; ta kontakt!</span><br><br>
+							<a href="mailto:admin@stavangerfotballgolf.no" style="color: black; text-align:left;">Email: admin@stavangerfotballgolf.no</a>
+							<span style="text-decoration: none;">Telefon: 920 920 95</span><br>
+							<a href="https://www.facebook.com/Fotballgolf" style="color: black; text-align: left;">Facebook: www.facebook.com/Fotballgolf</a><br>
 						</div>
+					</div>
+				</div>
+				<div id="becomeMember" class="groupContent" style="display:none;">
+					<div class="itemGroup">
+						<div class="itemHeader">Medlemskap</div>
+						<div class="itemContent">
+							<span>
+								Medlemskap i Stavanger Fotballgolf er gratis, og vi ønsker personer i alle aldre og kjønn velkommen som medlemmer! Det er ingen bindingstid og du står fritt til å melde deg ut når du måtte ønske<br><br>
+
+								Medlemskap hos oss vil gi ulike fordeler og nedenfor er en liste over de vi har per idag:<br><br>
+							</span>
+							<ul>
+								<li>10-15 % rabatt på varer hos MX Sport Hillevåg</li>
+								<li>Automatisk invitasjon til alle events som Stavanger Fotballgolf arrangerer</li>
+								<li>Invitasjon til å delta i Stavanger Fotballgolf sitt seriespill som starter opp våren 2015</li>
+								<li>Rabatt på diverse events arrangert i regi av Stavanger Fotballgolf</li>
+							</ul>
+						</div>
+					</div>
+					<div class="itemGroup">
+						<div class="itemHeader">Registrer deg</div>
+						<div class="itemContent">
+							<label class="ui-lbl">First name:</label><input class="ui-txt" type="text" data-field="FirstName" placeholder="Firstname" autocomplete="on" value="" required ></input><br>
+							<label class="ui-lbl">Last name:</label><input class="ui-txt" type="text" data-field="LastName" placeholder="Lastname" autocomplete="on" value="" required></input><br>
+							<label class="ui-lbl">Birthday:</label><input type="date" data-field="BirthDay" name="bdaytime" required></input><br>
+							<label class="ui-lbl">Telefon:</label><input class="ui-txt" type="number" placeholder="[1-9][1-9][1-9][1-9][1-9][1-9][1-9][1-9]" data-field="Telephone" name="telephone" min="10000000" max="99999999" required></input><br>
+							<label class="ui-lbl">Email:</label><input class="ui-txt" type="email" placeholder="example@domain.no" name="email" data-field="Email" autocomplete="on" required></input><br>
+							<br><br>
+							<input id="btn-save-membership" class="ui-btn" type="button" onclick="saveMember(this)" value="Register as member"></input><br><br>
+						</div>
+						<div class="registerMemberFooter"></div>
 					</div>
 				</div>
 				<div id="statistics" class="groupContent" style="display:none;">
@@ -140,12 +212,20 @@
 					<div class="itemGroup">
 						<div class="itemHeader">Madla</div>
 						<div class="itemContent">
-							<span>78 spark - Dagi</span><br>
-							<span>82 spark - Christer</span><br>
-							<span>99 spark - Sindre</span><br>
-							<span>103 spark - David</span><br>
-							<span>102 spark - Krister T</span><br>
-							<span>115 spark - Joakim B</span><br>
+							<span>86 spark - Dagi</span><br>
+							<span>90 spark - Christer</span><br>
+							<span>107 spark - Sindre</span><br>
+							<span>110 spark - Krister T</span><br>
+							<span>111 spark - David</span><br>
+							<span>123 spark - Joakim B</span><br>
+						</div>
+					</div>
+					<div class="itemGroup">
+						<div class="itemHeader">Gosen</div>
+						<div class="itemContent">
+							<span>93 spark - Dagi</span><br>
+							<span>99 spark - Audun</span><br>
+							<span>111 spark - David</span><br>
 						</div>
 					</div>
 				</div>
