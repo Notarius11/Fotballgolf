@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"utf8",
+				"utf8_encode"
+			],
+			[
+				"bord",
+				"border-left"
+			],
+			[
+				"color",
+				"color-main"
+			],
+			[
+				"num",
+				"numRegistered"
+			],
+			[
+				"mysqli",
+				"mysql_insert_id"
+			],
+			[
+				"person",
+				"personID"
+			],
+			[
+				"mys",
+				"mysql_errno"
+			],
+			[
+				"main",
+				"mainSection"
+			],
+			[
+				"rig",
+				"rightSection"
+			],
+			[
+				"left",
+				"leftSection"
+			],
+			[
+				"mysql",
+				"mysql_error"
+			],
+			[
 				"in",
 				"input	Tag"
 			],
@@ -14,10 +58,6 @@
 			[
 				"nth",
 				"nth-child"
-			],
-			[
-				"color",
-				"color-border"
 			],
 			[
 				"border",
@@ -92,10 +132,6 @@
 				"background-color"
 			],
 			[
-				"main",
-				"MainTextColor"
-			],
-			[
 				"wid",
 				"width"
 			],
@@ -136,6 +172,14 @@
 			}
 		},
 		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 15454,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "main.html",
 			"settings":
 			{
@@ -160,10 +204,10 @@
 			}
 		},
 		{
-			"file": "index.html",
+			"file": "/F/WebProjects/Homestead/Homestead.yaml",
 			"settings":
 			{
-				"buffer_size": 6910,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
@@ -171,7 +215,7 @@
 			"file": "javascript/main_homepage.js",
 			"settings":
 			{
-				"buffer_size": 4963,
+				"buffer_size": 10578,
 				"line_ending": "Windows"
 			}
 		},
@@ -195,7 +239,7 @@
 			"file": "scss/pagelayout.scss",
 			"settings":
 			{
-				"buffer_size": 7562,
+				"buffer_size": 8147,
 				"line_ending": "Windows"
 			}
 		},
@@ -203,7 +247,7 @@
 			"file": "connectDB.php",
 			"settings":
 			{
-				"buffer_size": 1606,
+				"buffer_size": 4977,
 				"line_ending": "Windows"
 			}
 		}
@@ -252,6 +296,8 @@
 	},
 	"file_history":
 	[
+		"/F/Web Projects/Fotballgolf/index.html",
+		"/C/Windows/System32/drivers/etc/hosts",
 		"/F/Web Projects/Fotballgolf/css/fontello.css",
 		"/F/Web Projects/Fotballgolf/javascript/main_homepage",
 		"/F/Web Projects/Fotballgolf/scss/susylayout2.scss",
@@ -284,6 +330,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"æ",
+			"ø",
+			"å",
+			"æ",
+			"menuButton",
+			".icon-list",
+			"icon-list",
 			"ø",
 			"å",
 			"no-gutter",
@@ -306,7 +359,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -321,8 +374,8 @@
 						"selection":
 						[
 							[
-								6338,
-								6338
+								0,
+								0
 							]
 						],
 						"settings":
@@ -331,13 +384,40 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3933.0,
+						"translation.y": 963.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 15454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5935,
+								5935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1782.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "main.html",
 					"settings":
 					{
@@ -348,8 +428,8 @@
 						"selection":
 						[
 							[
-								720,
-								720
+								0,
+								0
 							]
 						],
 						"settings":
@@ -364,7 +444,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "scss/layout.scss",
 					"settings":
 					{
@@ -375,8 +455,8 @@
 						"selection":
 						[
 							[
-								3150,
-								3152
+								0,
+								0
 							]
 						],
 						"settings":
@@ -391,7 +471,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "scss/susylayout.scss",
 					"settings":
 					{
@@ -402,8 +482,8 @@
 						"selection":
 						[
 							[
-								2391,
-								2404
+								0,
+								0
 							]
 						],
 						"settings":
@@ -418,60 +498,60 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "index.html",
-					"settings":
-					{
-						"buffer_size": 6910,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2148,
-								2148
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 432.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 5,
-					"file": "javascript/main_homepage.js",
+					"file": "/F/WebProjects/Homestead/Homestead.yaml",
 					"settings":
 					{
-						"buffer_size": 4963,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4391,
-								4391
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/YAML/YAML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 2808.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
+					"file": "javascript/main_homepage.js",
+					"settings":
+					{
+						"buffer_size": 10578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4290.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "css/fontello.css",
 					"settings":
 					{
@@ -482,8 +562,8 @@
 						"selection":
 						[
 							[
-								1910,
-								1910
+								0,
+								0
 							]
 						],
 						"settings":
@@ -493,13 +573,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 621.0,
+						"translation.y": 571.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "javascript/main.js",
 					"settings":
 					{
@@ -510,8 +590,8 @@
 						"selection":
 						[
 							[
-								546,
-								546
+								0,
+								0
 							]
 						],
 						"settings":
@@ -526,19 +606,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "scss/pagelayout.scss",
 					"settings":
 					{
-						"buffer_size": 7562,
+						"buffer_size": 8147,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7318,
-								7318
+								0,
+								0
 							]
 						],
 						"settings":
@@ -547,25 +627,25 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 8856.0,
+						"translation.y": 3036.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "connectDB.php",
 					"settings":
 					{
-						"buffer_size": 1606,
+						"buffer_size": 4977,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1438,
-								1443
+								0,
+								0
 							]
 						],
 						"settings":
@@ -574,7 +654,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 504.0,
+						"translation.y": 1452.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
